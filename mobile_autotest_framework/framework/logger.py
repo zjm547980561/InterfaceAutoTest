@@ -10,12 +10,12 @@ class Logger(object):
         self.logger.setLevel(logging.DEBUG)
 
         rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
-        log_path = os.path.abspath('.').rsplit('/', 1)[0] + '/log/'
-        log_name = log_path + rq + '.log'
+        log_path = os.path.abspath('.') + '/log/'
+        log_name = log_path + rq + ".log"
         handler = logging.FileHandler(log_name)
         handler.setLevel(logging.INFO)
-        formtter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        handler.setFormatter(formtter)
+        formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+        handler.setFormatter(formatter)
         self.logger.addHandler(handler)
 
     def get_logger(self):

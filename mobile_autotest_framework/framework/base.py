@@ -3,7 +3,7 @@
 from framework.logger import Logger
 import os
 import time
-logger = Logger('base').get_logger()
+logger = Logger('Base').get_logger()
 
 
 class Base(object):
@@ -40,7 +40,6 @@ class Base(object):
         file_path = os.path.abspath('.').rsplit('/', 1)[0] + "/screen_shot/"
         rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
         screen_name = file_path + rq + '.png'
-        # print(screen_name)
         try:
             self.driver.get_screenshot_as_file(screen_name)
             logger.info("Had take screenshot and save to folder : /screen_shot")
