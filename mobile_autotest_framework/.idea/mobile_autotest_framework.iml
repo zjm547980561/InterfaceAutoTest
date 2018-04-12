@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="automation_test_framework" />
     <orderEntry type="module" module-name="learn_py" />
+    <orderEntry type="module" module-name="first" />
   </component>
 </module>

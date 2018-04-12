@@ -5,7 +5,7 @@ import unittest
 import time
 import os
 
-logger = Logger('RunScript').get_logger()
+logger = Logger('RunnerScript').get_logger()
 
 report_path = os.path.abspath('.') + '/test_reports/'
 
@@ -23,7 +23,9 @@ if __name__ == '__main__':
     # 初始化一个HTMLTestRunner实例对象，用来生成报告
     logger.info('test begin')
     runner = HTMLTestRunner(stream=fp, title=u"课程格子项目测试报告", description=u"测试app的安装和卸载", verbosity=2)
+    print(suite)
     # 开始执行测试套件
     runner.run(suite)
     logger.info('test finished')
+    logger.info("test report is stored in /test_reports")
     fp.close()

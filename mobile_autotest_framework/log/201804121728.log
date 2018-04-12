@@ -1,0 +1,11 @@
+2018-04-12 17:29:35,262 - RunnerScript - INFO - test begin
+2018-04-12 17:30:25,156 - forget password - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET
+
+2018-04-12 17:30:25,184 - forget password - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET
+
+2018-04-12 17:30:25,208 - forget password - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET
+
+2018-04-12 17:30:25,226 - forget password - ERROR - Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: read ECONNRESET
+
+2018-04-12 17:30:52,474 - RunnerScript - INFO - test finished
+2018-04-12 17:30:52,474 - RunnerScript - INFO - test report is stored in /test_reports
