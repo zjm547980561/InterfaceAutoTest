@@ -1,6 +1,6 @@
 # user/testRegister
-user/testLogin
-# user/testManualExchange
+# user/testLogin
+user/testManualExchange
 # user/testIco
 # user/testWallet
 # user/testRegister

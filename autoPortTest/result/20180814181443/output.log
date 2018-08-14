@@ -1,0 +1,3473 @@
+2018-08-14 18:14:43,483 - root - INFO - {}
+2018-08-14 18:14:43,495 - root - INFO - ********TEST START********
+2018-08-14 18:14:43,496 - root - INFO - ----------------------------------------coin_null_buy START----------------------------------------
+2018-08-14 18:14:43,496 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:43,496 - root - INFO - 第二步：设置发送数据  {'amount': '12.32', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128637, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:43,496 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:43,511 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:43,682 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:43,685 - root - INFO - url  api/trades
+2018-08-14 18:14:43,685 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:43,685 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:43,685 - root - INFO - Return result：{'success': False, 'err': 'global_coin_guid required'}
+2018-08-14 18:14:43,685 - root - INFO - 测试通过
+2018-08-14 18:14:43,685 - root - INFO - coin_null_buy - Result: Pass - msg: {'success': False, 'err': 'global_coin_guid required'}
+2018-08-14 18:14:43,685 - root - INFO - ----------------------------------------coin_null_buy END----------------------------------------
+
+2018-08-14 18:14:43,686 - root - INFO - ----------------------------------------coin_empty_buy START----------------------------------------
+2018-08-14 18:14:43,686 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:43,686 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': '', 'amount': '12.32', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128637, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:43,687 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:43,689 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:43,844 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 500 1635
+2018-08-14 18:14:43,848 - root - INFO - url  api/trades
+2018-08-14 18:14:43,848 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:43,848 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:43,848 - root - INFO - coin_empty_buy - Result: Pass - msg: None
+2018-08-14 18:14:43,848 - root - INFO - ----------------------------------------coin_empty_buy END----------------------------------------
+
+2018-08-14 18:14:43,848 - root - INFO - ----------------------------------------input_price_type_null_buy START----------------------------------------
+2018-08-14 18:14:43,849 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:43,849 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128642, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:43,849 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:43,851 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:43,939 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:43,942 - root - INFO - url  api/trades
+2018-08-14 18:14:43,943 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:43,943 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:43,943 - root - INFO - Return result：{'success': False, 'err': 'input_price_type required'}
+2018-08-14 18:14:43,943 - root - INFO - 测试通过
+2018-08-14 18:14:43,943 - root - INFO - input_price_type_null_buy - Result: Pass - msg: {'success': False, 'err': 'input_price_type required'}
+2018-08-14 18:14:43,943 - root - INFO - ----------------------------------------input_price_type_null_buy END----------------------------------------
+
+2018-08-14 18:14:43,943 - root - INFO - ----------------------------------------input_price_type_empty_buy START----------------------------------------
+2018-08-14 18:14:43,944 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:43,944 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': '', 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128642, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:43,944 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:43,946 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:44,070 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:44,073 - root - INFO - url  api/trades
+2018-08-14 18:14:44,074 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:44,074 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:44,074 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:44,074 - root - INFO - 准备请求持仓
+2018-08-14 18:14:44,074 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:44,074 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:44,076 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:44,435 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:44,439 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:44,439 - root - INFO - 测试通过
+2018-08-14 18:14:44,439 - root - INFO - input_price_type_empty_buy - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:44,439 - root - INFO - ----------------------------------------input_price_type_empty_buy END----------------------------------------
+
+2018-08-14 18:14:44,439 - root - INFO - ----------------------------------------amount_null_buy START----------------------------------------
+2018-08-14 18:14:44,440 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:44,440 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128643, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:44,440 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:44,442 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:44,522 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:44,525 - root - INFO - url  api/trades
+2018-08-14 18:14:44,525 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:44,525 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:44,525 - root - INFO - Return result：{'success': False, 'err': 'amount required'}
+2018-08-14 18:14:44,525 - root - INFO - 测试通过
+2018-08-14 18:14:44,526 - root - INFO - amount_null_buy - Result: Pass - msg: {'success': False, 'err': 'amount required'}
+2018-08-14 18:14:44,526 - root - INFO - ----------------------------------------amount_null_buy END----------------------------------------
+
+2018-08-14 18:14:44,526 - root - INFO - ----------------------------------------amount_empty_buy START----------------------------------------
+2018-08-14 18:14:44,527 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:44,527 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128643, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:44,527 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:44,529 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:44,648 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 500 1635
+2018-08-14 18:14:44,652 - root - INFO - url  api/trades
+2018-08-14 18:14:44,652 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:44,653 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:44,653 - root - INFO - amount_empty_buy - Result: Pass - msg: None
+2018-08-14 18:14:44,653 - root - INFO - ----------------------------------------amount_empty_buy END----------------------------------------
+
+2018-08-14 18:14:44,654 - root - INFO - ----------------------------------------deducted_null_buy START----------------------------------------
+2018-08-14 18:14:44,654 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:44,655 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128644, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:44,655 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:44,659 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:44,818 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:44,825 - root - INFO - url  api/trades
+2018-08-14 18:14:44,825 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:44,825 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:44,825 - root - INFO - Return result：{'success': False, 'err': 'deducted required'}
+2018-08-14 18:14:44,825 - root - INFO - 测试通过
+2018-08-14 18:14:44,826 - root - INFO - deducted_null_buy - Result: Pass - msg: {'success': False, 'err': 'deducted required'}
+2018-08-14 18:14:44,826 - root - INFO - ----------------------------------------deducted_null_buy END----------------------------------------
+
+2018-08-14 18:14:44,826 - root - INFO - ----------------------------------------deducted_empty_buy START----------------------------------------
+2018-08-14 18:14:44,826 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:44,826 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128644, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:44,827 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:44,828 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:44,927 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:44,933 - root - INFO - url  api/trades
+2018-08-14 18:14:44,934 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:44,934 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:44,934 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:44,934 - root - INFO - 准备请求持仓
+2018-08-14 18:14:44,934 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:44,934 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:44,936 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:45,161 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:45,163 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:45,163 - root - INFO - 测试通过
+2018-08-14 18:14:45,163 - root - INFO - deducted_empty_buy - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:45,163 - root - INFO - ----------------------------------------deducted_empty_buy END----------------------------------------
+
+2018-08-14 18:14:45,163 - root - INFO - ----------------------------------------input_fee_null_buy START----------------------------------------
+2018-08-14 18:14:45,164 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:45,164 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_price': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128645, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:45,164 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:45,166 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:45,301 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:45,304 - root - INFO - url  api/trades
+2018-08-14 18:14:45,304 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:45,304 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:45,304 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:45,304 - root - INFO - 准备请求持仓
+2018-08-14 18:14:45,304 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:45,305 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:45,306 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:45,520 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:45,523 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:45,524 - root - INFO - 测试通过
+2018-08-14 18:14:45,524 - root - INFO - input_fee_null_buy - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:45,524 - root - INFO - ----------------------------------------input_fee_null_buy END----------------------------------------
+
+2018-08-14 18:14:45,524 - root - INFO - ----------------------------------------input_fee_empty_buy START----------------------------------------
+2018-08-14 18:14:45,525 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:45,525 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '', 'input_price': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128645, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:45,525 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:45,527 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:45,639 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:45,644 - root - INFO - url  api/trades
+2018-08-14 18:14:45,644 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:45,645 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:45,646 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:45,647 - root - INFO - 准备请求持仓
+2018-08-14 18:14:45,649 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:45,649 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:45,651 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:45,883 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:45,909 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:45,909 - root - INFO - 测试通过
+2018-08-14 18:14:45,909 - root - INFO - input_fee_empty_buy - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:45,909 - root - INFO - ----------------------------------------input_fee_empty_buy END----------------------------------------
+
+2018-08-14 18:14:45,909 - root - INFO - ----------------------------------------input_fee_type_null_buy START----------------------------------------
+2018-08-14 18:14:45,910 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:45,910 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': True, 'exchange_guid': 'binance', 'input_fee': '10.0', 'input_price': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128646, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:45,910 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:45,912 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:46,032 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:46,035 - root - INFO - url  api/trades
+2018-08-14 18:14:46,035 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:46,035 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:46,036 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:46,036 - root - INFO - 准备请求持仓
+2018-08-14 18:14:46,036 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:46,036 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:46,038 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:46,320 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:46,324 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:46,324 - root - INFO - 测试通过
+2018-08-14 18:14:46,324 - root - INFO - input_fee_type_null_buy - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:46,324 - root - INFO - ----------------------------------------input_fee_type_null_buy END----------------------------------------
+
+2018-08-14 18:14:46,324 - root - INFO - ----------------------------------------input_fee_type_empty_buy START----------------------------------------
+2018-08-14 18:14:46,325 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:46,325 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': '', 'input_fee': '10.0', 'input_price': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128646, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:46,325 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:46,327 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:46,433 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:46,438 - root - INFO - url  api/trades
+2018-08-14 18:14:46,438 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:46,438 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:46,438 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:46,438 - root - INFO - 准备请求持仓
+2018-08-14 18:14:46,439 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:46,439 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:46,440 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:46,695 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:46,697 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:46,697 - root - INFO - 测试通过
+2018-08-14 18:14:46,698 - root - INFO - input_fee_type_empty_buy - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:46,698 - root - INFO - ----------------------------------------input_fee_type_empty_buy END----------------------------------------
+
+2018-08-14 18:14:46,698 - root - INFO - ----------------------------------------trade_null START----------------------------------------
+2018-08-14 18:14:46,698 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:46,698 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'traded_at': 1534128637, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:46,698 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:46,700 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:46,799 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:46,802 - root - INFO - url  api/trades
+2018-08-14 18:14:46,803 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:46,803 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:46,803 - root - INFO - Return result：{'success': False, 'err': 'trade_type required'}
+2018-08-14 18:14:46,803 - root - INFO - 测试通过
+2018-08-14 18:14:46,803 - root - INFO - trade_null - Result: Pass - msg: {'success': False, 'err': 'trade_type required'}
+2018-08-14 18:14:46,803 - root - INFO - ----------------------------------------trade_null END----------------------------------------
+
+2018-08-14 18:14:46,803 - root - INFO - ----------------------------------------traded_at_null_buy START----------------------------------------
+2018-08-14 18:14:46,804 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:46,804 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:46,804 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:46,806 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:46,917 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:46,925 - root - INFO - url  api/trades
+2018-08-14 18:14:46,926 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:46,926 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:46,926 - root - INFO - Return result：{'success': False, 'err': 'traded_at required'}
+2018-08-14 18:14:46,926 - root - INFO - 测试通过
+2018-08-14 18:14:46,926 - root - INFO - traded_at_null_buy - Result: Pass - msg: {'success': False, 'err': 'traded_at required'}
+2018-08-14 18:14:46,926 - root - INFO - ----------------------------------------traded_at_null_buy END----------------------------------------
+
+2018-08-14 18:14:46,926 - root - INFO - ----------------------------------------traded_at_empty_buy START----------------------------------------
+2018-08-14 18:14:46,927 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:46,927 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': '', 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:46,927 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:46,929 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:47,034 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:47,037 - root - INFO - url  api/trades
+2018-08-14 18:14:47,037 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:47,037 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:47,037 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:14:47,037 - root - INFO - 准备请求持仓
+2018-08-14 18:14:47,038 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:47,038 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:47,039 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:47,295 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:47,298 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:47,298 - root - INFO - 测试通过
+2018-08-14 18:14:47,298 - root - INFO - traded_at_empty_buy - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:14:47,298 - root - INFO - ----------------------------------------traded_at_empty_buy END----------------------------------------
+
+2018-08-14 18:14:47,298 - root - INFO - ----------------------------------------coin_null_sell START----------------------------------------
+2018-08-14 18:14:47,299 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:47,299 - root - INFO - 第二步：设置发送数据  {'amount': '12.32', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128637, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:47,299 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:47,301 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:47,396 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:47,398 - root - INFO - url  api/trades
+2018-08-14 18:14:47,399 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:47,399 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:47,399 - root - INFO - Return result：{'success': False, 'err': 'global_coin_guid required'}
+2018-08-14 18:14:47,399 - root - INFO - 测试通过
+2018-08-14 18:14:47,399 - root - INFO - coin_null_sell - Result: Pass - msg: {'success': False, 'err': 'global_coin_guid required'}
+2018-08-14 18:14:47,399 - root - INFO - ----------------------------------------coin_null_sell END----------------------------------------
+
+2018-08-14 18:14:47,399 - root - INFO - ----------------------------------------coin_empty_sell START----------------------------------------
+2018-08-14 18:14:47,400 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:47,400 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': '', 'amount': '12.32', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128637, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:47,400 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:47,402 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:47,499 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 500 1635
+2018-08-14 18:14:47,501 - root - INFO - url  api/trades
+2018-08-14 18:14:47,501 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:47,501 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:47,501 - root - INFO - coin_empty_sell - Result: Pass - msg: None
+2018-08-14 18:14:47,502 - root - INFO - ----------------------------------------coin_empty_sell END----------------------------------------
+
+2018-08-14 18:14:47,502 - root - INFO - ----------------------------------------exchange_null_sell START----------------------------------------
+2018-08-14 18:14:47,502 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:47,502 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '1', 'exchange_guid': 'none', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128639, 'pair': 'ETH/BTC'}
+2018-08-14 18:14:47,502 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:47,504 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:47,585 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 500 1635
+2018-08-14 18:14:47,588 - root - INFO - url  api/trades
+2018-08-14 18:14:47,588 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:47,589 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:47,589 - root - INFO - exchange_null_sell - Result: Pass - msg: None
+2018-08-14 18:14:47,589 - root - INFO - ----------------------------------------exchange_null_sell END----------------------------------------
+
+2018-08-14 18:14:47,589 - root - INFO - ----------------------------------------exchange_empty_sell START----------------------------------------
+2018-08-14 18:14:47,590 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:47,590 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '1', 'exchange_guid': '', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128639, 'exchange_name': '', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:47,590 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:47,592 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:47,667 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 500 1635
+2018-08-14 18:14:47,670 - root - INFO - url  api/trades
+2018-08-14 18:14:47,670 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:47,670 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:47,670 - root - INFO - exchange_empty_sell - Result: Pass - msg: None
+2018-08-14 18:14:47,670 - root - INFO - ----------------------------------------exchange_empty_sell END----------------------------------------
+
+2018-08-14 18:14:47,670 - root - INFO - ----------------------------------------trade_pair_null_sell START----------------------------------------
+2018-08-14 18:14:47,671 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:47,671 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128640, 'exchange_name': 'Binance'}
+2018-08-14 18:14:47,671 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:47,673 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:47,752 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:47,756 - root - INFO - url  api/trades
+2018-08-14 18:14:47,756 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:47,756 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:47,756 - root - INFO - Return result：{'success': False, 'err': 'pair required'}
+2018-08-14 18:14:47,756 - root - INFO - 测试通过
+2018-08-14 18:14:47,756 - root - INFO - trade_pair_null_sell - Result: Pass - msg: {'success': False, 'err': 'pair required'}
+2018-08-14 18:14:47,756 - root - INFO - ----------------------------------------trade_pair_null_sell END----------------------------------------
+
+2018-08-14 18:14:47,756 - root - INFO - ----------------------------------------trade_pair_empty_sell START----------------------------------------
+2018-08-14 18:14:47,757 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:47,757 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128640, 'exchange_name': 'Binance', 'pair': ''}
+2018-08-14 18:14:47,757 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:47,759 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:47,843 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:47,847 - root - INFO - url  api/trades
+2018-08-14 18:14:47,847 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:47,847 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:47,847 - root - INFO - Return result：{'success': False, 'err': 'error pair'}
+2018-08-14 18:14:47,847 - root - INFO - 测试通过
+2018-08-14 18:14:47,847 - root - INFO - trade_pair_empty_sell - Result: Pass - msg: {'success': False, 'err': 'error pair'}
+2018-08-14 18:14:47,847 - root - INFO - ----------------------------------------trade_pair_empty_sell END----------------------------------------
+
+2018-08-14 18:14:47,848 - root - INFO - ----------------------------------------input_price_null_sell START----------------------------------------
+2018-08-14 18:14:47,848 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:47,848 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128641, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:47,848 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:47,850 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:47,957 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:47,961 - root - INFO - url  api/trades
+2018-08-14 18:14:47,961 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:47,961 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:47,962 - root - INFO - Return result：{'success': False, 'err': 'input_price required'}
+2018-08-14 18:14:47,962 - root - INFO - 测试通过
+2018-08-14 18:14:47,962 - root - INFO - input_price_null_sell - Result: Pass - msg: {'success': False, 'err': 'input_price required'}
+2018-08-14 18:14:47,962 - root - INFO - ----------------------------------------input_price_null_sell END----------------------------------------
+
+2018-08-14 18:14:47,962 - root - INFO - ----------------------------------------input_price_empty_sell START----------------------------------------
+2018-08-14 18:14:47,963 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:47,963 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128641, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:47,963 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:47,965 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:48,084 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 500 1635
+2018-08-14 18:14:48,088 - root - INFO - url  api/trades
+2018-08-14 18:14:48,088 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:48,088 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:48,088 - root - INFO - input_price_empty_sell - Result: Pass - msg: None
+2018-08-14 18:14:48,088 - root - INFO - ----------------------------------------input_price_empty_sell END----------------------------------------
+
+2018-08-14 18:14:48,089 - root - INFO - ----------------------------------------trade_empty START----------------------------------------
+2018-08-14 18:14:48,089 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:48,089 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': '', 'traded_at': 1534128637, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:48,089 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:48,091 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:48,210 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:48,214 - root - INFO - url  api/trades
+2018-08-14 18:14:48,214 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:48,214 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:48,214 - root - INFO - Return result：{'success': False, 'err': 'error trade_type'}
+2018-08-14 18:14:48,215 - root - INFO - 测试通过
+2018-08-14 18:14:48,215 - root - INFO - trade_empty - Result: Pass - msg: {'success': False, 'err': 'error trade_type'}
+2018-08-14 18:14:48,215 - root - INFO - ----------------------------------------trade_empty END----------------------------------------
+
+2018-08-14 18:14:48,215 - root - INFO - ----------------------------------------input_price_type_null_sell START----------------------------------------
+2018-08-14 18:14:48,215 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:48,215 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128642, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:48,216 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:48,217 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:48,292 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:48,295 - root - INFO - url  api/trades
+2018-08-14 18:14:48,296 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:48,296 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:48,296 - root - INFO - Return result：{'success': False, 'err': 'input_price_type required'}
+2018-08-14 18:14:48,296 - root - INFO - 测试通过
+2018-08-14 18:14:48,296 - root - INFO - input_price_type_null_sell - Result: Pass - msg: {'success': False, 'err': 'input_price_type required'}
+2018-08-14 18:14:48,296 - root - INFO - ----------------------------------------input_price_type_null_sell END----------------------------------------
+
+2018-08-14 18:14:48,296 - root - INFO - ----------------------------------------input_price_type_empty_sell START----------------------------------------
+2018-08-14 18:14:48,297 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:48,297 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': '', 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128642, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:48,297 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:48,299 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:48,427 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:48,431 - root - INFO - url  api/trades
+2018-08-14 18:14:48,431 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:48,431 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:48,431 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:48,431 - root - INFO - 准备请求持仓
+2018-08-14 18:14:48,431 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:48,431 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:48,433 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:48,668 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:48,674 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:48,674 - root - INFO - 测试通过
+2018-08-14 18:14:48,674 - root - INFO - input_price_type_empty_sell - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:48,674 - root - INFO - ----------------------------------------input_price_type_empty_sell END----------------------------------------
+
+2018-08-14 18:14:48,674 - root - INFO - ----------------------------------------amount_null_sell START----------------------------------------
+2018-08-14 18:14:48,675 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:48,675 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128643, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:48,675 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:48,677 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:48,752 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:48,756 - root - INFO - url  api/trades
+2018-08-14 18:14:48,756 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:48,756 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:48,756 - root - INFO - Return result：{'success': False, 'err': 'amount required'}
+2018-08-14 18:14:48,756 - root - INFO - 测试通过
+2018-08-14 18:14:48,756 - root - INFO - amount_null_sell - Result: Pass - msg: {'success': False, 'err': 'amount required'}
+2018-08-14 18:14:48,756 - root - INFO - ----------------------------------------amount_null_sell END----------------------------------------
+
+2018-08-14 18:14:48,757 - root - INFO - ----------------------------------------amount_empty_sell START----------------------------------------
+2018-08-14 18:14:48,757 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:48,757 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128643, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:48,757 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:48,760 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:48,886 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 500 1635
+2018-08-14 18:14:48,889 - root - INFO - url  api/trades
+2018-08-14 18:14:48,890 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:48,890 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:48,891 - root - INFO - amount_empty_sell - Result: Pass - msg: None
+2018-08-14 18:14:48,892 - root - INFO - ----------------------------------------amount_empty_sell END----------------------------------------
+
+2018-08-14 18:14:48,893 - root - INFO - ----------------------------------------deducted_null_sell START----------------------------------------
+2018-08-14 18:14:48,895 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:48,895 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128644, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:48,896 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:48,898 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:48,976 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:48,980 - root - INFO - url  api/trades
+2018-08-14 18:14:48,980 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:48,980 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:48,980 - root - INFO - Return result：{'success': False, 'err': 'deducted required'}
+2018-08-14 18:14:48,980 - root - INFO - 测试通过
+2018-08-14 18:14:48,980 - root - INFO - deducted_null_sell - Result: Pass - msg: {'success': False, 'err': 'deducted required'}
+2018-08-14 18:14:48,980 - root - INFO - ----------------------------------------deducted_null_sell END----------------------------------------
+
+2018-08-14 18:14:48,980 - root - INFO - ----------------------------------------deducted_empty_sell START----------------------------------------
+2018-08-14 18:14:48,981 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:48,981 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128644, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:48,981 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:48,983 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:49,076 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:49,079 - root - INFO - url  api/trades
+2018-08-14 18:14:49,079 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:49,079 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:49,079 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:49,079 - root - INFO - 准备请求持仓
+2018-08-14 18:14:49,080 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:49,080 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:49,082 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:49,378 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:49,382 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:49,382 - root - INFO - 测试通过
+2018-08-14 18:14:49,382 - root - INFO - deducted_empty_sell - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:49,382 - root - INFO - ----------------------------------------deducted_empty_sell END----------------------------------------
+
+2018-08-14 18:14:49,382 - root - INFO - ----------------------------------------input_fee_null_sell START----------------------------------------
+2018-08-14 18:14:49,383 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:49,383 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_price': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128645, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:49,383 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:49,385 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:49,506 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:49,509 - root - INFO - url  api/trades
+2018-08-14 18:14:49,509 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:49,509 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:49,509 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:49,509 - root - INFO - 准备请求持仓
+2018-08-14 18:14:49,509 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:49,509 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:49,511 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:49,832 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:49,836 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:49,836 - root - INFO - 测试通过
+2018-08-14 18:14:49,836 - root - INFO - input_fee_null_sell - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:49,836 - root - INFO - ----------------------------------------input_fee_null_sell END----------------------------------------
+
+2018-08-14 18:14:49,837 - root - INFO - ----------------------------------------input_fee_type_null_sell START----------------------------------------
+2018-08-14 18:14:49,837 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:49,837 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee': '10.0', 'input_price': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128646, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:49,837 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:49,839 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:50,048 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:50,052 - root - INFO - url  api/trades
+2018-08-14 18:14:50,052 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:50,052 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:50,052 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:50,052 - root - INFO - 准备请求持仓
+2018-08-14 18:14:50,053 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:50,053 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:50,055 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:50,420 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:50,424 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:50,424 - root - INFO - 测试通过
+2018-08-14 18:14:50,424 - root - INFO - input_fee_type_null_sell - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:50,424 - root - INFO - ----------------------------------------input_fee_type_null_sell END----------------------------------------
+
+2018-08-14 18:14:50,425 - root - INFO - ----------------------------------------input_fee_type_empty_sell START----------------------------------------
+2018-08-14 18:14:50,425 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:50,425 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': '', 'input_fee': '10.0', 'input_price': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128646, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:50,425 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:50,427 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:50,546 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:50,549 - root - INFO - url  api/trades
+2018-08-14 18:14:50,549 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:50,549 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:50,550 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:50,550 - root - INFO - 准备请求持仓
+2018-08-14 18:14:50,550 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:50,550 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:50,552 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:50,833 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:50,836 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:50,837 - root - INFO - 测试通过
+2018-08-14 18:14:50,837 - root - INFO - input_fee_type_empty_sell - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:50,837 - root - INFO - ----------------------------------------input_fee_type_empty_sell END----------------------------------------
+
+2018-08-14 18:14:50,837 - root - INFO - ----------------------------------------traded_at_null_sell START----------------------------------------
+2018-08-14 18:14:50,837 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:50,837 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:50,838 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:50,839 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:50,907 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:50,911 - root - INFO - url  api/trades
+2018-08-14 18:14:50,911 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:50,911 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:50,911 - root - INFO - Return result：{'success': False, 'err': 'traded_at required'}
+2018-08-14 18:14:50,911 - root - INFO - 测试通过
+2018-08-14 18:14:50,911 - root - INFO - traded_at_null_sell - Result: Pass - msg: {'success': False, 'err': 'traded_at required'}
+2018-08-14 18:14:50,911 - root - INFO - ----------------------------------------traded_at_null_sell END----------------------------------------
+
+2018-08-14 18:14:50,911 - root - INFO - ----------------------------------------exchange_null_buy START----------------------------------------
+2018-08-14 18:14:50,912 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:50,912 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': True, 'exchange_guid': 'none', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128639, 'pair': 'ETH/BTC'}
+2018-08-14 18:14:50,912 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:50,914 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:51,017 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 500 1635
+2018-08-14 18:14:51,019 - root - INFO - url  api/trades
+2018-08-14 18:14:51,019 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:51,019 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:51,020 - root - INFO - exchange_null_buy - Result: Pass - msg: None
+2018-08-14 18:14:51,020 - root - INFO - ----------------------------------------exchange_null_buy END----------------------------------------
+
+2018-08-14 18:14:51,020 - root - INFO - ----------------------------------------traded_at_empty_sell START----------------------------------------
+2018-08-14 18:14:51,020 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:51,020 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '1', 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': '', 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:51,020 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:51,022 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:51,137 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:51,140 - root - INFO - url  api/trades
+2018-08-14 18:14:51,141 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:51,141 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:51,141 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:51,141 - root - INFO - 准备请求持仓
+2018-08-14 18:14:51,141 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:51,141 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:51,143 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:51,393 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:51,396 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:51,396 - root - INFO - 测试通过
+2018-08-14 18:14:51,396 - root - INFO - traded_at_empty_sell - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:51,396 - root - INFO - ----------------------------------------traded_at_empty_sell END----------------------------------------
+
+2018-08-14 18:14:51,396 - root - INFO - ----------------------------------------coin_null_transfer START----------------------------------------
+2018-08-14 18:14:51,397 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:51,397 - root - INFO - 第二步：设置发送数据  {'amount': '12.32', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128637, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': 'ETH/BTC', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:51,397 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:51,399 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:51,482 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:51,486 - root - INFO - url  api/trades
+2018-08-14 18:14:51,486 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:51,486 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:51,486 - root - INFO - Return result：{'success': False, 'err': 'global_coin_guid required'}
+2018-08-14 18:14:51,486 - root - INFO - 测试通过
+2018-08-14 18:14:51,486 - root - INFO - coin_null_transfer - Result: Pass - msg: {'success': False, 'err': 'global_coin_guid required'}
+2018-08-14 18:14:51,486 - root - INFO - ----------------------------------------coin_null_transfer END----------------------------------------
+
+2018-08-14 18:14:51,487 - root - INFO - ----------------------------------------coin_empty_transfer START----------------------------------------
+2018-08-14 18:14:51,487 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:51,487 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': '', 'amount': '12.32', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128637, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': 'ETH/BTC', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:51,487 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:51,489 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:51,587 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 500 1635
+2018-08-14 18:14:51,591 - root - INFO - url  api/trades
+2018-08-14 18:14:51,591 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:51,591 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:51,591 - root - INFO - coin_empty_transfer - Result: Pass - msg: None
+2018-08-14 18:14:51,591 - root - INFO - ----------------------------------------coin_empty_transfer END----------------------------------------
+
+2018-08-14 18:14:51,591 - root - INFO - ----------------------------------------transfer_from_null_transfer START----------------------------------------
+2018-08-14 18:14:51,592 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:51,592 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '0', 'exchange_guid': 'none', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128639, 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:51,592 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:51,594 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:51,684 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:51,687 - root - INFO - url  api/trades
+2018-08-14 18:14:51,687 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:51,687 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:51,687 - root - INFO - Return result：{'success': False, 'err': 'transfer_from required'}
+2018-08-14 18:14:51,687 - root - INFO - 测试通过
+2018-08-14 18:14:51,687 - root - INFO - transfer_from_null_transfer - Result: Pass - msg: {'success': False, 'err': 'transfer_from required'}
+2018-08-14 18:14:51,687 - root - INFO - ----------------------------------------transfer_from_null_transfer END----------------------------------------
+
+2018-08-14 18:14:51,688 - root - INFO - ----------------------------------------transfer_from_empty_transfer START----------------------------------------
+2018-08-14 18:14:51,688 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:51,688 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '0', 'exchange_guid': '', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128639, 'transfer_from': '', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:51,688 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:51,690 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:51,792 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:51,795 - root - INFO - url  api/trades
+2018-08-14 18:14:51,796 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:51,796 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:51,796 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:51,796 - root - INFO - 准备请求持仓
+2018-08-14 18:14:51,796 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:51,796 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:51,798 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:52,038 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:52,041 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:52,042 - root - INFO - 测试通过
+2018-08-14 18:14:52,042 - root - INFO - transfer_from_empty_transfer - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:52,042 - root - INFO - ----------------------------------------transfer_from_empty_transfer END----------------------------------------
+
+2018-08-14 18:14:52,042 - root - INFO - ----------------------------------------transfer_from_name_null_transfer START----------------------------------------
+2018-08-14 18:14:52,042 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:52,043 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128640, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:52,043 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:52,044 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:52,225 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:52,228 - root - INFO - url  api/trades
+2018-08-14 18:14:52,229 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:52,229 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:52,229 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:52,229 - root - INFO - 准备请求持仓
+2018-08-14 18:14:52,229 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:52,229 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:52,231 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:52,503 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:52,507 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:52,507 - root - INFO - 测试通过
+2018-08-14 18:14:52,507 - root - INFO - transfer_from_name_null_transfer - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:52,507 - root - INFO - ----------------------------------------transfer_from_name_null_transfer END----------------------------------------
+
+2018-08-14 18:14:52,507 - root - INFO - ----------------------------------------transfer_from_name_empty_transfer START----------------------------------------
+2018-08-14 18:14:52,508 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:52,508 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128640, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:52,508 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:52,510 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:52,631 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:52,633 - root - INFO - url  api/trades
+2018-08-14 18:14:52,634 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:52,634 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:52,634 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:52,634 - root - INFO - 准备请求持仓
+2018-08-14 18:14:52,634 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:52,634 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:52,636 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:52,878 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:52,882 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:52,882 - root - INFO - 测试通过
+2018-08-14 18:14:52,882 - root - INFO - transfer_from_name_empty_transfer - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:52,882 - root - INFO - ----------------------------------------transfer_from_name_empty_transfer END----------------------------------------
+
+2018-08-14 18:14:52,882 - root - INFO - ----------------------------------------transfer_to_null_transfer START----------------------------------------
+2018-08-14 18:14:52,883 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:52,883 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128641, 'transfer_from': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:52,883 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:52,885 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:52,981 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:52,985 - root - INFO - url  api/trades
+2018-08-14 18:14:52,985 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:52,985 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:52,985 - root - INFO - Return result：{'success': False, 'err': 'transfer_to required'}
+2018-08-14 18:14:52,985 - root - INFO - 测试通过
+2018-08-14 18:14:52,985 - root - INFO - transfer_to_null_transfer - Result: Pass - msg: {'success': False, 'err': 'transfer_to required'}
+2018-08-14 18:14:52,985 - root - INFO - ----------------------------------------transfer_to_null_transfer END----------------------------------------
+
+2018-08-14 18:14:52,985 - root - INFO - ----------------------------------------transfer_to_empty_transfer START----------------------------------------
+2018-08-14 18:14:52,986 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:52,986 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128641, 'transfer_from': '2.0', 'transfer_to': '', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:52,986 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:52,988 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:53,187 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:53,191 - root - INFO - url  api/trades
+2018-08-14 18:14:53,192 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:53,192 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:53,192 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:53,192 - root - INFO - 准备请求持仓
+2018-08-14 18:14:53,192 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:53,192 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:53,194 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:53,446 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:53,449 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:53,449 - root - INFO - 测试通过
+2018-08-14 18:14:53,450 - root - INFO - transfer_to_empty_transfer - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:53,450 - root - INFO - ----------------------------------------transfer_to_empty_transfer END----------------------------------------
+
+2018-08-14 18:14:53,450 - root - INFO - ----------------------------------------input_price_type_null_transfer START----------------------------------------
+2018-08-14 18:14:53,450 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:53,450 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128642, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:53,450 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:53,452 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:53,660 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:53,663 - root - INFO - url  api/trades
+2018-08-14 18:14:53,663 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:53,664 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:53,664 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:14:53,664 - root - INFO - 准备请求持仓
+2018-08-14 18:14:53,664 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:53,664 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:53,670 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:53,954 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:53,957 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:53,957 - root - INFO - 测试通过
+2018-08-14 18:14:53,957 - root - INFO - input_price_type_null_transfer - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:14:53,957 - root - INFO - ----------------------------------------input_price_type_null_transfer END----------------------------------------
+
+2018-08-14 18:14:53,957 - root - INFO - ----------------------------------------exchange_empty_buy START----------------------------------------
+2018-08-14 18:14:53,958 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:53,958 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': True, 'exchange_guid': '', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128639, 'exchange_name': '', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:53,958 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:53,960 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:54,156 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 500 1635
+2018-08-14 18:14:54,160 - root - INFO - url  api/trades
+2018-08-14 18:14:54,160 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:54,160 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:54,161 - root - INFO - exchange_empty_buy - Result: Pass - msg: None
+2018-08-14 18:14:54,161 - root - INFO - ----------------------------------------exchange_empty_buy END----------------------------------------
+
+2018-08-14 18:14:54,161 - root - INFO - ----------------------------------------input_price_type_empty_transfer START----------------------------------------
+2018-08-14 18:14:54,161 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:54,161 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': '', 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128642, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:54,161 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:54,163 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:54,344 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:54,348 - root - INFO - url  api/trades
+2018-08-14 18:14:54,348 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:54,348 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:54,348 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:14:54,348 - root - INFO - 准备请求持仓
+2018-08-14 18:14:54,348 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:54,349 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:54,350 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:54,636 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:54,639 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:54,639 - root - INFO - 测试通过
+2018-08-14 18:14:54,639 - root - INFO - input_price_type_empty_transfer - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:14:54,639 - root - INFO - ----------------------------------------input_price_type_empty_transfer END----------------------------------------
+
+2018-08-14 18:14:54,639 - root - INFO - ----------------------------------------amount_null_transfer START----------------------------------------
+2018-08-14 18:14:54,639 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:54,640 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128643, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:54,640 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:54,641 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:54,759 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:54,763 - root - INFO - url  api/trades
+2018-08-14 18:14:54,763 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:54,763 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:54,763 - root - INFO - Return result：{'success': False, 'err': 'amount required'}
+2018-08-14 18:14:54,763 - root - INFO - 测试通过
+2018-08-14 18:14:54,763 - root - INFO - amount_null_transfer - Result: Pass - msg: {'success': False, 'err': 'amount required'}
+2018-08-14 18:14:54,763 - root - INFO - ----------------------------------------amount_null_transfer END----------------------------------------
+
+2018-08-14 18:14:54,764 - root - INFO - ----------------------------------------amount_empty_transfer START----------------------------------------
+2018-08-14 18:14:54,764 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:54,764 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128643, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:54,764 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:54,766 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:54,891 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:54,894 - root - INFO - url  api/trades
+2018-08-14 18:14:54,895 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:54,895 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:54,895 - root - INFO - Return result：{'success': True}
+2018-08-14 18:14:54,895 - root - INFO - 准备请求持仓
+2018-08-14 18:14:54,895 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:54,895 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:54,897 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:55,154 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:55,157 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:55,157 - root - INFO - 测试通过
+2018-08-14 18:14:55,157 - root - INFO - amount_empty_transfer - Result: Pass - msg: {'success': True}
+2018-08-14 18:14:55,158 - root - INFO - ----------------------------------------amount_empty_transfer END----------------------------------------
+
+2018-08-14 18:14:55,158 - root - INFO - ----------------------------------------deducted_null_transfer START----------------------------------------
+2018-08-14 18:14:55,158 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:55,158 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128644, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:55,158 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:55,160 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:55,259 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:55,262 - root - INFO - url  api/trades
+2018-08-14 18:14:55,262 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:55,262 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:55,262 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:14:55,263 - root - INFO - 准备请求持仓
+2018-08-14 18:14:55,263 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:55,263 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:55,265 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:55,518 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:55,521 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:55,522 - root - INFO - 测试通过
+2018-08-14 18:14:55,522 - root - INFO - deducted_null_transfer - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:14:55,522 - root - INFO - ----------------------------------------deducted_null_transfer END----------------------------------------
+
+2018-08-14 18:14:55,522 - root - INFO - ----------------------------------------deducted_empty_transfer START----------------------------------------
+2018-08-14 18:14:55,522 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:55,522 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': '', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128644, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:55,523 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:55,525 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:55,621 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:55,625 - root - INFO - url  api/trades
+2018-08-14 18:14:55,625 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:55,626 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:55,626 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:14:55,626 - root - INFO - 准备请求持仓
+2018-08-14 18:14:55,626 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:55,626 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:55,628 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:55,889 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:55,893 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:55,893 - root - INFO - 测试通过
+2018-08-14 18:14:55,893 - root - INFO - deducted_empty_transfer - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:14:55,893 - root - INFO - ----------------------------------------deducted_empty_transfer END----------------------------------------
+
+2018-08-14 18:14:55,894 - root - INFO - ----------------------------------------input_fee_null_transfer START----------------------------------------
+2018-08-14 18:14:55,894 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:55,894 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128645, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:55,894 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:55,896 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:55,988 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:55,993 - root - INFO - url  api/trades
+2018-08-14 18:14:55,993 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:55,993 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:55,993 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:14:55,993 - root - INFO - 准备请求持仓
+2018-08-14 18:14:55,993 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:55,993 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:55,995 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:56,231 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:56,240 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:56,241 - root - INFO - 测试通过
+2018-08-14 18:14:56,241 - root - INFO - input_fee_null_transfer - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:14:56,241 - root - INFO - ----------------------------------------input_fee_null_transfer END----------------------------------------
+
+2018-08-14 18:14:56,241 - root - INFO - ----------------------------------------input_fee_empty_transfer START----------------------------------------
+2018-08-14 18:14:56,241 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:56,241 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128645, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:56,242 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:56,243 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:56,316 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:56,319 - root - INFO - url  api/trades
+2018-08-14 18:14:56,320 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:56,320 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:56,320 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:14:56,320 - root - INFO - 准备请求持仓
+2018-08-14 18:14:56,320 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:56,320 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:56,322 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:56,585 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:56,588 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:56,588 - root - INFO - 测试通过
+2018-08-14 18:14:56,589 - root - INFO - input_fee_empty_transfer - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:14:56,589 - root - INFO - ----------------------------------------input_fee_empty_transfer END----------------------------------------
+
+2018-08-14 18:14:56,589 - root - INFO - ----------------------------------------input_fee_type_null_transfer START----------------------------------------
+2018-08-14 18:14:56,589 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:56,589 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128646, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:56,589 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:56,591 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:56,809 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:56,813 - root - INFO - url  api/trades
+2018-08-14 18:14:56,813 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:56,814 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:56,815 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:14:56,815 - root - INFO - 准备请求持仓
+2018-08-14 18:14:56,816 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:56,816 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:56,820 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:57,503 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:57,505 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:57,505 - root - INFO - 测试通过
+2018-08-14 18:14:57,505 - root - INFO - input_fee_type_null_transfer - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:14:57,505 - root - INFO - ----------------------------------------input_fee_type_null_transfer END----------------------------------------
+
+2018-08-14 18:14:57,506 - root - INFO - ----------------------------------------input_fee_type_empty_transfer START----------------------------------------
+2018-08-14 18:14:57,506 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:57,506 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': '', 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128646, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:57,506 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:57,508 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:57,724 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:57,728 - root - INFO - url  api/trades
+2018-08-14 18:14:57,728 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:57,728 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:57,728 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:14:57,729 - root - INFO - 准备请求持仓
+2018-08-14 18:14:57,729 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:57,729 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:57,731 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:58,021 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:58,024 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:58,025 - root - INFO - 测试通过
+2018-08-14 18:14:58,025 - root - INFO - input_fee_type_empty_transfer - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:14:58,025 - root - INFO - ----------------------------------------input_fee_type_empty_transfer END----------------------------------------
+
+2018-08-14 18:14:58,025 - root - INFO - ----------------------------------------traded_at_null_transfer START----------------------------------------
+2018-08-14 18:14:58,025 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:58,026 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:58,026 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:58,028 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:58,154 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:58,158 - root - INFO - url  api/trades
+2018-08-14 18:14:58,158 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:58,158 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:58,158 - root - INFO - Return result：{'success': False, 'err': 'traded_at required'}
+2018-08-14 18:14:58,158 - root - INFO - 测试通过
+2018-08-14 18:14:58,158 - root - INFO - traded_at_null_transfer - Result: Pass - msg: {'success': False, 'err': 'traded_at required'}
+2018-08-14 18:14:58,158 - root - INFO - ----------------------------------------traded_at_null_transfer END----------------------------------------
+
+2018-08-14 18:14:58,158 - root - INFO - ----------------------------------------trade_pair_null_buy START----------------------------------------
+2018-08-14 18:14:58,159 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:58,159 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128640, 'exchange_name': 'Binance'}
+2018-08-14 18:14:58,159 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:58,161 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:58,378 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:58,382 - root - INFO - url  api/trades
+2018-08-14 18:14:58,382 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:58,382 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:58,382 - root - INFO - Return result：{'success': False, 'err': 'pair required'}
+2018-08-14 18:14:58,382 - root - INFO - 测试通过
+2018-08-14 18:14:58,383 - root - INFO - trade_pair_null_buy - Result: Pass - msg: {'success': False, 'err': 'pair required'}
+2018-08-14 18:14:58,383 - root - INFO - ----------------------------------------trade_pair_null_buy END----------------------------------------
+
+2018-08-14 18:14:58,383 - root - INFO - ----------------------------------------traded_at_empty_transfer START----------------------------------------
+2018-08-14 18:14:58,383 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:58,383 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': '', 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:14:58,383 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:58,385 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:58,471 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:58,475 - root - INFO - url  api/trades
+2018-08-14 18:14:58,475 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:58,475 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:58,475 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:14:58,475 - root - INFO - 准备请求持仓
+2018-08-14 18:14:58,476 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:58,476 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:58,478 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:58,740 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:58,742 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:58,742 - root - INFO - 测试通过
+2018-08-14 18:14:58,742 - root - INFO - traded_at_empty_transfer - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:14:58,742 - root - INFO - ----------------------------------------traded_at_empty_transfer END----------------------------------------
+
+2018-08-14 18:14:58,743 - root - INFO - ----------------------------------------transfer_to_name_null_transfer START----------------------------------------
+2018-08-14 18:14:58,743 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:58,743 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128646, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包'}
+2018-08-14 18:14:58,743 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:58,745 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:58,929 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:58,932 - root - INFO - url  api/trades
+2018-08-14 18:14:58,932 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:58,933 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:58,933 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:14:58,933 - root - INFO - 准备请求持仓
+2018-08-14 18:14:58,933 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:58,933 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:58,935 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:59,229 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:59,232 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:59,232 - root - INFO - 测试通过
+2018-08-14 18:14:59,232 - root - INFO - transfer_to_name_null_transfer - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:14:59,232 - root - INFO - ----------------------------------------transfer_to_name_null_transfer END----------------------------------------
+
+2018-08-14 18:14:59,232 - root - INFO - ----------------------------------------transfer_to_name_empty_transfer START----------------------------------------
+2018-08-14 18:14:59,235 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:59,235 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '2.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128646, 'transfer_from': '2.0', 'transfer_to': '2.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': ''}
+2018-08-14 18:14:59,235 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:59,242 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:59,337 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:59,341 - root - INFO - url  api/trades
+2018-08-14 18:14:59,341 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:59,341 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:59,341 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:14:59,341 - root - INFO - 准备请求持仓
+2018-08-14 18:14:59,342 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:14:59,342 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:59,343 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:59,582 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:14:59,586 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:14:59,586 - root - INFO - 测试通过
+2018-08-14 18:14:59,586 - root - INFO - transfer_to_name_empty_transfer - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:14:59,586 - root - INFO - ----------------------------------------transfer_to_name_empty_transfer END----------------------------------------
+
+2018-08-14 18:14:59,586 - root - INFO - ----------------------------------------coin_buy_price START----------------------------------------
+2018-08-14 18:14:59,587 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:14:59,587 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'ethereum', 'amount': '10.0', 'deducted': '1', 'exchange_guid': 'okex', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128637, 'exchange_name': 'OKEX', 'pair': 'ETH/BTC'}
+2018-08-14 18:14:59,587 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:59,589 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:59,700 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:14:59,704 - root - INFO - url  api/trades
+2018-08-14 18:14:59,704 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:14:59,704 - root - INFO - 第五步：检查结果
+2018-08-14 18:14:59,704 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:14:59,704 - root - INFO - 准备请求持仓
+2018-08-14 18:14:59,704 - root - INFO - url: api/global_coins/ethereum/holdings
+2018-08-14 18:14:59,704 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:14:59,706 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:14:59,835 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:14:59,839 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:00,061 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:15:00,064 - root - ERROR - '0' != '-0.1'
+- 0
++ -0.1
+
+2018-08-14 18:15:00,064 - root - INFO - 断言失败...
+2018-08-14 18:15:00,064 - root - INFO - coin_buy_price - Result: Fail - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:15:00,064 - root - INFO - ----------------------------------------coin_buy_price END----------------------------------------
+
+2018-08-14 18:15:00,065 - root - INFO - ----------------------------------------coin_buy_fee START----------------------------------------
+2018-08-14 18:15:00,065 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:15:00,065 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'ethereum', 'amount': '10.0', 'deducted': '0', 'exchange_guid': 'okex', 'input_fee_type': 2, 'input_fee': '0.1', 'input_price': '1200.0', 'input_price_type': 2, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128637, 'exchange_name': 'OKEX', 'pair': 'ETH/BTC'}
+2018-08-14 18:15:00,065 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:00,067 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:00,777 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:15:00,783 - root - INFO - url  api/trades
+2018-08-14 18:15:00,783 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:15:00,783 - root - INFO - 第五步：检查结果
+2018-08-14 18:15:00,783 - root - INFO - Return result：{'success': True}
+2018-08-14 18:15:00,783 - root - INFO - 准备请求持仓
+2018-08-14 18:15:00,784 - root - INFO - url: api/global_coins/ethereum/holdings
+2018-08-14 18:15:00,784 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:00,786 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:02,014 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:15:02,020 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:02,146 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:15:02,149 - root - ERROR - '9.9' != '9.8'
+- 9.9
+?   ^
++ 9.8
+?   ^
+
+2018-08-14 18:15:02,149 - root - INFO - 断言失败...
+2018-08-14 18:15:02,150 - root - INFO - coin_buy_fee - Result: Fail - msg: {'success': True}
+2018-08-14 18:15:02,150 - root - INFO - ----------------------------------------coin_buy_fee END----------------------------------------
+
+2018-08-14 18:15:02,150 - root - INFO - ----------------------------------------coin_buy START----------------------------------------
+2018-08-14 18:15:02,150 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:15:02,150 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'ethereum', 'amount': '10.0', 'deducted': '1', 'exchange_guid': 'okex', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128637, 'exchange_name': 'OKEX', 'pair': 'ETH/CNY'}
+2018-08-14 18:15:02,151 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:02,152 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:02,324 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:15:02,328 - root - INFO - url  api/trades
+2018-08-14 18:15:02,328 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:15:02,328 - root - INFO - 第五步：检查结果
+2018-08-14 18:15:02,328 - root - INFO - Return result：{'success': True}
+2018-08-14 18:15:02,328 - root - INFO - 准备请求持仓
+2018-08-14 18:15:02,329 - root - INFO - url: api/global_coins/ethereum/holdings
+2018-08-14 18:15:02,329 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:02,331 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:02,493 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:15:02,497 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:02,854 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:15:02,858 - root - ERROR - '18.9' != '18.8'
+- 18.9
+?    ^
++ 18.8
+?    ^
+
+2018-08-14 18:15:02,858 - root - INFO - 断言失败...
+2018-08-14 18:15:02,858 - root - INFO - coin_buy - Result: Fail - msg: {'success': True}
+2018-08-14 18:15:02,858 - root - INFO - ----------------------------------------coin_buy END----------------------------------------
+
+2018-08-14 18:15:02,859 - root - INFO - ----------------------------------------coin_sell_price START----------------------------------------
+2018-08-14 18:15:02,859 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:15:02,859 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'ethereum', 'amount': '10.0', 'deducted': '1', 'exchange_guid': 'zb', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128637, 'exchange_name': 'ZB', 'pair': 'ETH/USD'}
+2018-08-14 18:15:02,859 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:02,861 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:03,366 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:15:03,369 - root - INFO - url  api/trades
+2018-08-14 18:15:03,369 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:15:03,369 - root - INFO - 第五步：检查结果
+2018-08-14 18:15:03,369 - root - INFO - Return result：{'success': True}
+2018-08-14 18:15:03,369 - root - INFO - 准备请求持仓
+2018-08-14 18:15:03,370 - root - INFO - url: api/global_coins/ethereum/holdings
+2018-08-14 18:15:03,370 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:03,372 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:03,471 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:15:03,477 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:03,677 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:15:03,681 - root - ERROR - '8.9' != '8.8'
+- 8.9
+?   ^
++ 8.8
+?   ^
+
+2018-08-14 18:15:03,681 - root - INFO - 断言失败...
+2018-08-14 18:15:03,681 - root - INFO - coin_sell_price - Result: Fail - msg: {'success': True}
+2018-08-14 18:15:03,681 - root - INFO - ----------------------------------------coin_sell_price END----------------------------------------
+
+2018-08-14 18:15:03,681 - root - INFO - ----------------------------------------coin_sell_fee START----------------------------------------
+2018-08-14 18:15:03,682 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:15:03,682 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'ethereum', 'amount': '10.0', 'deducted': '0', 'exchange_guid': 'zb', 'input_fee_type': 2, 'input_fee': '0.1', 'input_price': '1200.0', 'input_price_type': 2, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128637, 'exchange_name': 'ZB', 'pair': 'ETH/USD'}
+2018-08-14 18:15:03,682 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:03,684 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:04,049 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:15:04,053 - root - INFO - url  api/trades
+2018-08-14 18:15:04,053 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:15:04,053 - root - INFO - 第五步：检查结果
+2018-08-14 18:15:04,053 - root - INFO - Return result：{'success': True}
+2018-08-14 18:15:04,053 - root - INFO - 准备请求持仓
+2018-08-14 18:15:04,053 - root - INFO - url: api/global_coins/ethereum/holdings
+2018-08-14 18:15:04,054 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:04,055 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:04,301 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:15:04,306 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:04,422 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:15:04,427 - root - ERROR - '-1.1' != '-1.2'
+- -1.1
+?    ^
++ -1.2
+?    ^
+
+2018-08-14 18:15:04,427 - root - INFO - 断言失败...
+2018-08-14 18:15:04,427 - root - INFO - coin_sell_fee - Result: Fail - msg: {'success': True}
+2018-08-14 18:15:04,427 - root - INFO - ----------------------------------------coin_sell_fee END----------------------------------------
+
+2018-08-14 18:15:04,427 - root - INFO - ----------------------------------------coin_sell START----------------------------------------
+2018-08-14 18:15:04,428 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:15:04,428 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '1', 'exchange_guid': 'okex', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 2, 'traded_at': 1534128637, 'exchange_name': 'OKEX', 'pair': 'ETH/CNY'}
+2018-08-14 18:15:04,428 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:04,430 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:04,570 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:15:04,574 - root - INFO - url  api/trades
+2018-08-14 18:15:04,574 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:15:04,574 - root - INFO - 第五步：检查结果
+2018-08-14 18:15:04,574 - root - INFO - Return result：{'success': True}
+2018-08-14 18:15:04,574 - root - INFO - 准备请求持仓
+2018-08-14 18:15:04,575 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:15:04,575 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:04,576 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:04,884 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:15:04,888 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:15:04,888 - root - INFO - 测试通过
+2018-08-14 18:15:04,888 - root - INFO - coin_sell - Result: Pass - msg: {'success': True}
+2018-08-14 18:15:04,888 - root - INFO - ----------------------------------------coin_sell END----------------------------------------
+
+2018-08-14 18:15:04,888 - root - INFO - ----------------------------------------coin_transfer_price START----------------------------------------
+2018-08-14 18:15:04,889 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:15:04,889 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '1', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128637, 'transfer_from': '2.0', 'transfer_to': '12.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '我的钱包'}
+2018-08-14 18:15:04,889 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:04,891 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:05,001 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:15:05,005 - root - INFO - url  api/trades
+2018-08-14 18:15:05,005 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:15:05,005 - root - INFO - 第五步：检查结果
+2018-08-14 18:15:05,005 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:15:05,005 - root - INFO - 准备请求持仓
+2018-08-14 18:15:05,005 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:15:05,005 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:05,007 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:05,267 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:15:05,271 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:15:05,271 - root - INFO - 测试通过
+2018-08-14 18:15:05,271 - root - INFO - coin_transfer_price - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:15:05,271 - root - INFO - ----------------------------------------coin_transfer_price END----------------------------------------
+
+2018-08-14 18:15:05,271 - root - INFO - ----------------------------------------trade_pair_empty_buy START----------------------------------------
+2018-08-14 18:15:05,272 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:15:05,272 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.1', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128640, 'exchange_name': 'Binance', 'pair': ''}
+2018-08-14 18:15:05,272 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:05,276 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:05,369 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:15:05,371 - root - INFO - url  api/trades
+2018-08-14 18:15:05,371 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:15:05,371 - root - INFO - 第五步：检查结果
+2018-08-14 18:15:05,372 - root - INFO - Return result：{'success': False, 'err': 'error pair'}
+2018-08-14 18:15:05,372 - root - INFO - 测试通过
+2018-08-14 18:15:05,372 - root - INFO - trade_pair_empty_buy - Result: Pass - msg: {'success': False, 'err': 'error pair'}
+2018-08-14 18:15:05,372 - root - INFO - ----------------------------------------trade_pair_empty_buy END----------------------------------------
+
+2018-08-14 18:15:05,372 - root - INFO - ----------------------------------------coin_transfer_fee START----------------------------------------
+2018-08-14 18:15:05,372 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:15:05,373 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '10.0', 'deducted': '0', 'exchange_guid': '2.0', 'input_fee_type': 2, 'input_fee': '0.1', 'input_price': '1200.0', 'input_price_type': 2, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128637, 'transfer_from': '2.0', 'transfer_to': '1200.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '他人的钱包'}
+2018-08-14 18:15:05,373 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:05,375 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:05,507 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:15:05,509 - root - INFO - url  api/trades
+2018-08-14 18:15:05,509 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:15:05,510 - root - INFO - 第五步：检查结果
+2018-08-14 18:15:05,510 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:15:05,510 - root - INFO - 准备请求持仓
+2018-08-14 18:15:05,510 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:15:05,510 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:05,512 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:05,761 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:15:05,763 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:15:05,763 - root - INFO - 测试通过
+2018-08-14 18:15:05,763 - root - INFO - coin_transfer_fee - Result: Pass - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:15:05,763 - root - INFO - ----------------------------------------coin_transfer_fee END----------------------------------------
+
+2018-08-14 18:15:05,764 - root - INFO - ----------------------------------------coin_transfer START----------------------------------------
+2018-08-14 18:15:05,764 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:15:05,764 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'ethereum', 'amount': '10.0', 'deducted': '1', 'exchange_guid': '2.0', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '12.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 3, 'traded_at': 1534128637, 'transfer_from': '2.0', 'transfer_to': '12.0', 'transfer_from_name': '我的钱包', 'transfer_to_name': '其他'}
+2018-08-14 18:15:05,764 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:05,766 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:05,877 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:15:05,880 - root - INFO - url  api/trades
+2018-08-14 18:15:05,880 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:15:05,880 - root - INFO - 第五步：检查结果
+2018-08-14 18:15:05,881 - root - INFO - Return result：{'success': True, 'deduct_failed': True}
+2018-08-14 18:15:05,881 - root - INFO - 准备请求持仓
+2018-08-14 18:15:05,881 - root - INFO - url: api/global_coins/ethereum/holdings
+2018-08-14 18:15:05,881 - root - INFO - headers: {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:05,883 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:05,969 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:15:05,975 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:06,092 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:15:06,098 - root - ERROR - '-1.1' != '-1.2'
+- -1.1
+?    ^
++ -1.2
+?    ^
+
+2018-08-14 18:15:06,098 - root - INFO - 断言失败...
+2018-08-14 18:15:06,098 - root - INFO - coin_transfer - Result: Fail - msg: {'success': True, 'deduct_failed': True}
+2018-08-14 18:15:06,098 - root - INFO - ----------------------------------------coin_transfer END----------------------------------------
+
+2018-08-14 18:15:06,099 - root - INFO - ----------------------------------------delete_all START----------------------------------------
+2018-08-14 18:15:06,099 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:15:06,099 - root - INFO - 第二步：设置发送数据  {}
+2018-08-14 18:15:06,099 - root - INFO - 第三步：设置头部  {'language': 'en', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:06,099 - root - INFO - url: api/global_coins/ethereum/holdings
+2018-08-14 18:15:06,099 - root - INFO - headers: {'language': 'en', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:06,101 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:06,202 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:15:06,207 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:06,296 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/ethereum/holdings HTTP/1.1" 200 None
+2018-08-14 18:15:06,300 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:06,402 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "DELETE /api/trades/828f7422-d109-461b-9181-28e457f0e172 HTTP/1.1" 200 None
+2018-08-14 18:15:06,406 - root - INFO - 删除交易记录：828f7422-d109-461b-9181-28e457f0e172
+2018-08-14 18:15:06,408 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:06,501 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "DELETE /api/trades/ef22c96f-7667-4d70-8ced-2b868d5e028b HTTP/1.1" 200 None
+2018-08-14 18:15:06,504 - root - INFO - 删除交易记录：ef22c96f-7667-4d70-8ced-2b868d5e028b
+2018-08-14 18:15:06,506 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:06,598 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "DELETE /api/trades/2b6acfd9-4307-4a8e-bfb1-b239b99cb402 HTTP/1.1" 200 None
+2018-08-14 18:15:06,600 - root - INFO - 删除交易记录：2b6acfd9-4307-4a8e-bfb1-b239b99cb402
+2018-08-14 18:15:06,602 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:06,712 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "DELETE /api/trades/bb63f91d-ffc0-4356-a34f-6f0b530e8e86 HTTP/1.1" 200 None
+2018-08-14 18:15:06,716 - root - INFO - 删除交易记录：bb63f91d-ffc0-4356-a34f-6f0b530e8e86
+2018-08-14 18:15:06,716 - root - INFO - url  api/trades/bb63f91d-ffc0-4356-a34f-6f0b530e8e86
+2018-08-14 18:15:06,716 - root - INFO - 第四步：发送请求, 请求方法：delete
+2018-08-14 18:15:06,716 - root - INFO - 第五步：检查结果
+2018-08-14 18:15:06,716 - root - INFO - delete_all - Result: Pass - msg: None
+2018-08-14 18:15:06,717 - root - INFO - ----------------------------------------delete_all END----------------------------------------
+
+2018-08-14 18:15:06,717 - root - INFO - ----------------------------------------delete_all START----------------------------------------
+2018-08-14 18:15:06,717 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:15:06,718 - root - INFO - 第二步：设置发送数据  {}
+2018-08-14 18:15:06,718 - root - INFO - 第三步：设置头部  {'language': 'en', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:06,718 - root - INFO - url: api/global_coins/bitcoin/holdings
+2018-08-14 18:15:06,718 - root - INFO - headers: {'language': 'en', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:06,720 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:06,951 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "GET /api/global_coins/bitcoin/holdings HTTP/1.1" 500 1635
+2018-08-14 18:15:06,954 - root - ERROR - <!DOCTYPE html>
+<html>
+<head>
+  <title>We're sorry, but something went wrong (500)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  .rails-default-error-page div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  .rails-default-error-page h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+
+  .rails-default-error-page div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <div>
+      <h1>We're sorry, but something went wrong.</h1>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>
+
+2018-08-14 18:15:06,954 - root - INFO - ----------------------------------------input_price_null_buy START----------------------------------------
+2018-08-14 18:15:06,955 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:15:06,955 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128641, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:15:06,955 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:06,957 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:07,132 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 200 None
+2018-08-14 18:15:07,135 - root - INFO - url  api/trades
+2018-08-14 18:15:07,135 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:15:07,136 - root - INFO - 第五步：检查结果
+2018-08-14 18:15:07,136 - root - INFO - Return result：{'success': False, 'err': 'input_price required'}
+2018-08-14 18:15:07,136 - root - INFO - 测试通过
+2018-08-14 18:15:07,136 - root - INFO - input_price_null_buy - Result: Pass - msg: {'success': False, 'err': 'input_price required'}
+2018-08-14 18:15:07,136 - root - INFO - ----------------------------------------input_price_null_buy END----------------------------------------
+
+2018-08-14 18:15:07,136 - root - INFO - ----------------------------------------input_price_empty_buy START----------------------------------------
+2018-08-14 18:15:07,136 - root - INFO - 第一步：设置url  api/trades
+2018-08-14 18:15:07,137 - root - INFO - 第二步：设置发送数据  {'global_coin_guid': 'bitcoin', 'amount': '12.32', 'deducted': True, 'exchange_guid': 'binance', 'input_fee_type': 1, 'input_fee': '10.0', 'input_price': '', 'input_price_type': 1, 'remark': '你好', 'trade_type': 1, 'traded_at': 1534128641, 'exchange_name': 'Binance', 'pair': 'ETH/BTC'}
+2018-08-14 18:15:07,137 - root - INFO - 第三步：设置头部  {'language': 'zh', 'Authorization': 'Token token=nwPuyiNC5ESo6ytWSOKs9w'}
+2018-08-14 18:15:07,139 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 18:15:07,269 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/trades HTTP/1.1" 500 1635
+2018-08-14 18:15:07,273 - root - INFO - url  api/trades
+2018-08-14 18:15:07,273 - root - INFO - 第四步：发送请求, 请求方法：post
+2018-08-14 18:15:07,273 - root - INFO - 第五步：检查结果
+2018-08-14 18:15:07,273 - root - INFO - input_price_empty_buy - Result: Pass - msg: None
+2018-08-14 18:15:07,273 - root - INFO - ----------------------------------------input_price_empty_buy END----------------------------------------
+
+2018-08-14 18:15:07,277 - root - INFO - *********TEST END*********
+2018-08-14 18:15:07,277 - root - INFO - Doesn't send report email to developer.

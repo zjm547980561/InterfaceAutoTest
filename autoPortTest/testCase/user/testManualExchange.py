@@ -87,26 +87,22 @@ class ManualExchange(unittest.TestCase):
         if 'type' == ty:
             if name == "None":
                 return None
-            else:
+            elif not name == '':
                 return int(name.split('.')[0])
+            else:
+                return name
         else:
             if name == "None":
                 return None
-            elif name == "TRUE":
+            elif name == "T":
                 return True
+            elif name == "F":
+                return False
             else:
                 return name
 
-    @property
-    def guid(self):
-        if self.wallet_type == "ETH":
-            self.wallet_id = localReadConfig.get_headers('wallet_ETH_guid')
-        else:
-            self.wallet_id = localReadConfig.get_headers('wallet_BTC_guid')
-        return self.wallet_id
-
     def delete_key(self, key, data_copy):
-        if not data_copy[key]:
+        if data_copy[key] is None:
             self.data.pop(key)
         else:
             pass
@@ -123,6 +119,7 @@ class ManualExchange(unittest.TestCase):
 
         # set data
         self.data = dict()
+        print(self.deducted)
         if not self.method == "delete":
             self.data['global_coin_guid'] = self.is_none(self.global_coin_guid)
 
@@ -153,26 +150,19 @@ class ManualExchange(unittest.TestCase):
         self.logger.info("第二步：设置发送数据  " + str(self.data))
 
         # set headers
-        headers = dict()
+        self.headers = dict()
+
         if self.language == '0.0':
-            headers['language'] = 'zh'
+            self.headers['language'] = 'zh'
         else:
-            headers['language'] = 'en'
-        headers['Authorization'] = localReadConfig.get_headers('Authorization')
-        configHttp.set_headers(headers)
-        self.logger.info("第三步：设置头部  " + str(headers))
+            self.headers['language'] = 'en'
+        self.headers['Authorization'] = localReadConfig.get_headers('Authorization')
+        configHttp.set_headers(self.headers)
+        self.logger.info("第三步：设置头部  " + str(self.headers))
         try:
             # test interface
             if self.method == "post":
                 self.return_json = configHttp.post()
-            elif self.method == "get":
-                self.url = self.url + '/' + self.guid
-                configHttp.set_url(self.url)
-                self.return_json = configHttp.get()
-            elif self.method == "put":
-                self.url = self.url + '/' + self.guid
-                configHttp.set_url(self.url)
-                self.return_json = configHttp.put()
             elif self.method == "delete":
                 self.result = self.get_trade_list()
                 self.delete_trade_list()
@@ -245,20 +235,23 @@ class ManualExchange(unittest.TestCase):
     def get_holdings(self):
         self.logger.info("准备请求持仓")
         self.result = self.get_trade_list()
-        d.setdefault(self.global_coin_guid, 0)
-        d[self.global_coin_guid] = d[self.global_coin_guid] + float(self.amount) - self.is_deducted()
-        holdings = round(float(self.amount) - self.is_deducted() + float(self.result['manual_count']) - 10, 1)
-        self.assertTrue(self.result['success'])
-        self.assertEqual(self.result['holding_count'], str(holdings))
-        self.assertIsNotNone(self.result['holding_value'])
-        self.assertIsNotNone(self.result['change_24h'])
-        self.assertIsNotNone(self.result['manual_count'])
-        self.assertIsNotNone(['auto_count'])
-        self.assertEqual(self.result['holding_count'], str(holdings))
-        self.write_trade_id()
+        if self.result:
+            d.setdefault(self.global_coin_guid, 0)
+            d[self.global_coin_guid] = d[self.global_coin_guid] + float(self.amount) - self.is_deducted()
+            holdings = round(float(self.amount) - self.is_deducted() + float(self.result['manual_count']) - 10, 1)
+            self.assertTrue(self.result['success'])
+            self.assertEqual(self.result['holding_count'], str(holdings))
+            self.assertIsNotNone(self.result['holding_value'])
+            self.assertIsNotNone(self.result['change_24h'])
+            self.assertIsNotNone(self.result['manual_count'])
+            self.assertIsNotNone(['auto_count'])
+            self.assertEqual(self.result['holding_count'], str(holdings))
+            self.write_trade_id()
+        else:
+            pass
 
     def transfer_fee(self):
-        if not self.input_fee == "None":
+        if not self.input_fee == "None" and not self.input_fee == "":
             input_fee = float(self.input_fee)
         else:
             input_fee = 0
@@ -282,7 +275,7 @@ class ManualExchange(unittest.TestCase):
 
     def delete_trade_list(self):
         for item in self.result["trades"]:
-            self.url = common.get_url_from_xml('manual_exchange') + item['series_id']
+            self.url = common.get_url_from_xml('manual_exchange') + '/' + item['series_id']
             configHttp.set_url(self.url)
             configHttp.delete()
             self.logger.info("删除交易记录：" + item['series_id'])
@@ -290,6 +283,14 @@ class ManualExchange(unittest.TestCase):
     def get_trade_list(self):
         self.url = common.get_url_from_xml('global_coins') + '/' + self.global_coin_guid + '/holdings'
         configHttp.set_url(self.url)
-        self.logger.info("url: " + self.url)
+        configHttp.set_headers(self.headers)
         configHttp.set_data({})
-        return configHttp.get().json()
+        self.logger.info("url: " + self.url)
+        self.logger.info("headers: " + str(self.headers))
+        configHttp.set_data({})
+        response = configHttp.get()
+        if response.status_code == 200:
+            return configHttp.get().json()
+        else:
+            self.logger.error(response.text)
+            return None

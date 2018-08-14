@@ -47,17 +47,17 @@
     <SUITE FILE_PATH="coverage/autoPortTest$readConfig.coverage" NAME="readConfig Coverage Results" MODIFIED="1532932284100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/autoPortTest$Log.coverage" NAME="Log Coverage Results" MODIFIED="1533624442835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/autoPortTest$runAll__1_.coverage" NAME="runAll (1) Coverage Results" MODIFIED="1534215797153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/interfaceTest 2" />
-    <SUITE FILE_PATH="coverage/autoPortTest$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1534216269811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/autoPortTest$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1534241682963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/autoPortTest$block.coverage" NAME="block Coverage Results" MODIFIED="1533709944128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../block" />
-    <SUITE FILE_PATH="coverage/autoPortTest$testLmdb.coverage" NAME="testLmdb Coverage Results" MODIFIED="1534154133692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../block" />
+    <SUITE FILE_PATH="coverage/autoPortTest$testLmdb.coverage" NAME="testLmdb Coverage Results" MODIFIED="1534241676798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../block" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="testManualExchange.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testCase/user/testManualExchange.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="164">
+              <caret line="270" column="38" lean-forward="true" selection-start-line="270" selection-start-column="38" selection-end-line="270" selection-end-column="38" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -65,26 +65,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runAll.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runAll.py">
+      <file leaf-file-name="output.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/result/20180814181443/output.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-43">
+              <caret line="3342" column="90" selection-start-line="3342" selection-start-column="80" selection-end-line="3342" selection-end-column="90" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paramunittest.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/paramunittest.py">
+      <file leaf-file-name="testLmdb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../block/testLmdb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="465">
+              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -100,13 +94,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>REPORT_CLASS_TMPL</find>
-      <find>test_list</find>
-      <find>wallet_wallet_address_wrong_btc_zh</find>
-      <find>pass</find>
-      <find>testcase</find>
-      <find>_generate_report_test</find>
-      <find>showTestDetail</find>
       <find>REPORT_TEST_WITH_OUTPUT_TMPL</find>
       <find>heading</find>
       <find>HEADING_TMPL</find>
@@ -119,7 +106,6 @@
       <find>register_short_pwd_zh</find>
       <find>register_already_registered__zh</find>
       <find>fail</find>
-      <find>error</find>
       <find>True</find>
       <find>Fail</find>
       <find>transfer</find>
@@ -130,6 +116,14 @@
       <find>REPORT_TMPL</find>
       <find>self.stopTime</find>
       <find>__getattr__</find>
+      <find>coin_sell</find>
+      <find>input_fee_empty_buy</find>
+      <find>coin_transfer_price</find>
+      <find>transfer_to_name_empty_transfer</find>
+      <find>input_price_type_empty_buy</find>
+      <find>error</find>
+      <find>delete_trade_list</find>
+      <find>delete_all</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,24 +144,24 @@
         <option value="$PROJECT_DIR$/common/configEmail.py" />
         <option value="$PROJECT_DIR$/../block/block.py" />
         <option value="$PROJECT_DIR$/result/20180809121614/output.log" />
-        <option value="$PROJECT_DIR$/config.ini" />
         <option value="$PROJECT_DIR$/common/HTMLTestRunner_PY3.py" />
         <option value="$PROJECT_DIR$/common/Log.py" />
         <option value="$PROJECT_DIR$/testCase/user/testLogin.py" />
         <option value="$PROJECT_DIR$/common/verify_code.py" />
         <option value="$PROJECT_DIR$/testFile/interfaceURL.xml" />
-        <option value="$PROJECT_DIR$/../block/testLmdb.py" />
         <option value="$PROJECT_DIR$/testCase/user/testIco.py" />
         <option value="$PROJECT_DIR$/testCase/user/testRegister.py" />
         <option value="$PROJECT_DIR$/testCase/user/testWallet.py" />
-        <option value="$PROJECT_DIR$/testCase/user/testManualExchange.py" />
-        <option value="$PROJECT_DIR$/caselist.txt" />
         <option value="$USER_HOME$/Desktop/interfaceTest/runAll.py" />
         <option value="$USER_HOME$/Downloads/interfaceTest 2/common/HTMLTestRunner.py" />
         <option value="$PROJECT_DIR$/common/HTMLTestRunner.py" />
         <option value="$USER_HOME$/Downloads/interfaceTest 2/runAll.py" />
         <option value="/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/paramunittest.py" />
         <option value="$PROJECT_DIR$/runAll.py" />
+        <option value="$PROJECT_DIR$/caselist.txt" />
+        <option value="$PROJECT_DIR$/config.ini" />
+        <option value="$PROJECT_DIR$/../block/testLmdb.py" />
+        <option value="$PROJECT_DIR$/testCase/user/testManualExchange.py" />
       </list>
     </option>
   </component>
@@ -199,12 +193,13 @@
             <path>
               <item name="autoPortTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="autoPortTest" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autoPortTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="autoPortTest" type="462c0819:PsiDirectoryNode" />
               <item name="result" type="462c0819:PsiDirectoryNode" />
+              <item name="20180814181443" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autoPortTest" type="b2602c69:ProjectViewProjectNode" />
@@ -216,6 +211,21 @@
               <item name="autoPortTest" type="462c0819:PsiDirectoryNode" />
               <item name="testCase" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autoPortTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autoPortTest" type="462c0819:PsiDirectoryNode" />
+              <item name="testFile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autoPortTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autoPortTest" type="462c0819:PsiDirectoryNode" />
+              <item name="testFile" type="462c0819:PsiDirectoryNode" />
+              <item name="case" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autoPortTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="block" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autoPortTest" type="b2602c69:ProjectViewProjectNode" />
@@ -371,7 +381,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -396,98 +406,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/result/20180810121121/output.log" />
-    <entry file="file://$PROJECT_DIR$/result/20180813113858/output.log" />
-    <entry file="file://$PROJECT_DIR$/result/20180813114125/output.log" />
-    <entry file="file://$PROJECT_DIR$/result/20180813120335/output.log" />
-    <entry file="file://$PROJECT_DIR$/result/20180813120424/output.log" />
-    <entry file="file://$PROJECT_DIR$/result/20180813120739/output.log" />
-    <entry file="file://$PROJECT_DIR$/result/20180813152650/output.log" />
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1199943127/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="3153" column="8" selection-start-line="3153" selection-start-column="8" selection-end-line="3153" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="162" column="4" selection-start-line="162" selection-start-column="4" selection-end-line="162" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testFile/interfaceURL.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/20180813170057/output.log" />
-    <entry file="file://$PROJECT_DIR$/result/20180813170930/output.log" />
-    <entry file="file://$PROJECT_DIR$/result/20180813171726/output.log" />
-    <entry file="file://$PROJECT_DIR$/result/20180813172025/output.log" />
-    <entry file="file://$PROJECT_DIR$/result/20180813172147/output.log" />
-    <entry file="file://$PROJECT_DIR$/result/20180813173147/output.log" />
-    <entry file="file://$PROJECT_DIR$/result/20180813175417/output.log" />
-    <entry file="file://$PROJECT_DIR$/../block/testLmdb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/20180813175933/output.log" />
-    <entry file="file://$PROJECT_DIR$/testCase/user/testRegister.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/20180813180342/output.log" />
-    <entry file="file://$PROJECT_DIR$/common/Log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
-          <folding>
-            <element signature="e#43#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../coinBoxTest/framework/HTMLTestRunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/caselist.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/20180813183545/output.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="79" lean-forward="true" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result/20180813183918/output.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -636,10 +554,178 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testFile/emailStyle.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814111110/output.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caselist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814122118/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="560" lean-forward="true" selection-start-line="560" selection-end-line="560" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814124203/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="139" column="154" lean-forward="true" selection-start-line="139" selection-start-column="154" selection-end-line="139" selection-end-column="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814143354/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="43" column="61" lean-forward="true" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814143558/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="900" column="111" selection-start-line="900" selection-start-column="80" selection-end-line="900" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814145252/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="56" column="142" selection-start-line="56" selection-start-column="108" selection-end-line="56" selection-end-column="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814150214/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="42" column="106" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814151355/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6330">
+          <caret line="3151" column="90" selection-start-line="3151" selection-start-column="80" selection-end-line="3151" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814152039/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6795">
+          <caret line="3769" column="50" selection-start-line="3769" selection-start-column="40" selection-end-line="3769" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814152456/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="3873" column="50" lean-forward="true" selection-start-line="3873" selection-start-column="50" selection-end-line="3873" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814160445/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="3368" column="125" selection-start-line="3368" selection-start-column="113" selection-end-line="3368" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814160917/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814161430/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3960" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814161906/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-82">
+          <caret line="2540" column="90" selection-start-line="2540" selection-start-column="80" selection-end-line="2540" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814162033/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2429">
+          <caret line="3340" column="26" selection-start-line="3340" selection-start-column="26" selection-end-line="3340" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814162939/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="138" lean-forward="true" selection-start-line="26" selection-start-column="138" selection-end-line="26" selection-end-column="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814163806/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10768" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testFile/interfaceURL.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814165643/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814175540/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814180554/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21808" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../block/testLmdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180814181443/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43">
+          <caret line="3342" column="90" selection-start-line="3342" selection-start-column="80" selection-end-line="3342" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testCase/user/testManualExchange.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="164">
+          <caret line="270" column="38" lean-forward="true" selection-start-line="270" selection-start-column="38" selection-end-line="270" selection-end-column="38" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
