@@ -1,0 +1,147 @@
+2018-08-14 11:11:10,284 - root - INFO - ********TEST START********
+2018-08-14 11:11:10,284 - root - INFO - ----------------------------------------login_zh START----------------------------------------
+2018-08-14 11:11:10,285 - root - INFO - 第一步：设置url  api/login_with_tmp
+2018-08-14 11:11:10,285 - root - INFO - 第二步：设置发送数据  {'email': '547980561@qq.com', 'password': '123456'}
+2018-08-14 11:11:10,285 - root - INFO - 第三步：设置头部  {'language': 'zh'}
+2018-08-14 11:11:10,301 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 11:11:10,389 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/login_with_tmp HTTP/1.1" 200 None
+2018-08-14 11:11:10,393 - root - INFO - 第四步：发送请求, 请求方法：POST
+2018-08-14 11:11:10,393 - root - INFO - 第五步：检查结果
+2018-08-14 11:11:10,393 - root - INFO - 测试通过
+2018-08-14 11:11:10,393 - root - INFO - login_zh - Result: Pass - msg: {'success': True, 'user': {'guid': '919ad0d2-3ed0-4ecf-97d9-602254389574', 'token': 'nwPuyiNC5ESo6ytWSOKs9w', 'email': '547980561@qq.com', 'is_tmp': False}, 'need_choose_account': False}
+2018-08-14 11:11:10,393 - root - INFO - ----------------------------------------login_zh END----------------------------------------
+
+2018-08-14 11:11:10,394 - root - INFO - ----------------------------------------login_email_null_zh START----------------------------------------
+2018-08-14 11:11:10,394 - root - INFO - 第一步：设置url  api/login_with_tmp
+2018-08-14 11:11:10,394 - root - INFO - 第二步：设置发送数据  {'email': None, 'password': '123456'}
+2018-08-14 11:11:10,394 - root - INFO - 第三步：设置头部  {'language': 'zh'}
+2018-08-14 11:11:10,396 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 11:11:10,733 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/login_with_tmp HTTP/1.1" 200 None
+2018-08-14 11:11:10,737 - root - INFO - 第四步：发送请求, 请求方法：POST
+2018-08-14 11:11:10,737 - root - INFO - 第五步：检查结果
+2018-08-14 11:11:10,737 - root - INFO - 测试通过
+2018-08-14 11:11:10,737 - root - INFO - login_email_null_zh - Result: Pass - msg: {'success': False, 'err': '邮箱无效'}
+2018-08-14 11:11:10,737 - root - INFO - ----------------------------------------login_email_null_zh END----------------------------------------
+
+2018-08-14 11:11:10,737 - root - INFO - ----------------------------------------login_short_pwd_en START----------------------------------------
+2018-08-14 11:11:10,738 - root - INFO - 第一步：设置url  api/login_with_tmp
+2018-08-14 11:11:10,738 - root - INFO - 第二步：设置发送数据  {'email': 'zjm901026@163.com', 'password': '1234'}
+2018-08-14 11:11:10,738 - root - INFO - 第三步：设置头部  {'language': 'en'}
+2018-08-14 11:11:10,740 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 11:11:10,833 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/login_with_tmp HTTP/1.1" 200 None
+2018-08-14 11:11:10,837 - root - INFO - 第四步：发送请求, 请求方法：POST
+2018-08-14 11:11:10,838 - root - INFO - 第五步：检查结果
+2018-08-14 11:11:10,838 - root - INFO - 测试通过
+2018-08-14 11:11:10,838 - root - INFO - login_short_pwd_en - Result: Pass - msg: {'success': False, 'err': 'Wrong username or password'}
+2018-08-14 11:11:10,838 - root - INFO - ----------------------------------------login_short_pwd_en END----------------------------------------
+
+2018-08-14 11:11:10,839 - root - INFO - ----------------------------------------login_bad_pwd_en START----------------------------------------
+2018-08-14 11:11:10,840 - root - INFO - 第一步：设置url  api/login_with_tmp
+2018-08-14 11:11:10,840 - root - INFO - 第二步：设置发送数据  {'email': 'zjm901026@163.com', 'password': '1234567'}
+2018-08-14 11:11:10,840 - root - INFO - 第三步：设置头部  {'language': 'en'}
+2018-08-14 11:11:10,842 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 11:11:10,914 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/login_with_tmp HTTP/1.1" 200 None
+2018-08-14 11:11:10,917 - root - INFO - 第四步：发送请求, 请求方法：POST
+2018-08-14 11:11:10,917 - root - INFO - 第五步：检查结果
+2018-08-14 11:11:10,917 - root - INFO - 测试通过
+2018-08-14 11:11:10,917 - root - INFO - login_bad_pwd_en - Result: Pass - msg: {'success': False, 'err': 'Wrong username or password'}
+2018-08-14 11:11:10,917 - root - INFO - ----------------------------------------login_bad_pwd_en END----------------------------------------
+
+2018-08-14 11:11:10,917 - root - INFO - ----------------------------------------login_pwd_null_zh START----------------------------------------
+2018-08-14 11:11:10,918 - root - INFO - 第一步：设置url  api/login_with_tmp
+2018-08-14 11:11:10,918 - root - INFO - 第二步：设置发送数据  {'email': 'zjm901026@163.com', 'password': None}
+2018-08-14 11:11:10,918 - root - INFO - 第三步：设置头部  {'language': 'zh'}
+2018-08-14 11:11:10,920 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 11:11:11,135 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/login_with_tmp HTTP/1.1" 200 None
+2018-08-14 11:11:11,139 - root - INFO - 第四步：发送请求, 请求方法：POST
+2018-08-14 11:11:11,139 - root - INFO - 第五步：检查结果
+2018-08-14 11:11:11,139 - root - INFO - 测试通过
+2018-08-14 11:11:11,139 - root - INFO - login_pwd_null_zh - Result: Pass - msg: {'success': False, 'err': '用户名或密码错误'}
+2018-08-14 11:11:11,140 - root - INFO - ----------------------------------------login_pwd_null_zh END----------------------------------------
+
+2018-08-14 11:11:11,140 - root - INFO - ----------------------------------------login_illegal_email_zh START----------------------------------------
+2018-08-14 11:11:11,140 - root - INFO - 第一步：设置url  api/login_with_tmp
+2018-08-14 11:11:11,140 - root - INFO - 第二步：设置发送数据  {'email': 'zjm901026@163', 'password': '123456'}
+2018-08-14 11:11:11,140 - root - INFO - 第三步：设置头部  {'language': 'zh'}
+2018-08-14 11:11:11,142 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 11:11:11,220 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/login_with_tmp HTTP/1.1" 200 None
+2018-08-14 11:11:11,223 - root - INFO - 第四步：发送请求, 请求方法：POST
+2018-08-14 11:11:11,223 - root - INFO - 第五步：检查结果
+2018-08-14 11:11:11,224 - root - INFO - 测试通过
+2018-08-14 11:11:11,224 - root - INFO - login_illegal_email_zh - Result: Pass - msg: {'success': False, 'err': '邮箱未注册'}
+2018-08-14 11:11:11,224 - root - INFO - ----------------------------------------login_illegal_email_zh END----------------------------------------
+
+2018-08-14 11:11:11,224 - root - INFO - ----------------------------------------login_short_pwd_zh START----------------------------------------
+2018-08-14 11:11:11,224 - root - INFO - 第一步：设置url  api/login_with_tmp
+2018-08-14 11:11:11,224 - root - INFO - 第二步：设置发送数据  {'email': 'zjm901026@163.com', 'password': '1234'}
+2018-08-14 11:11:11,224 - root - INFO - 第三步：设置头部  {'language': 'zh'}
+2018-08-14 11:11:11,226 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 11:11:11,298 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/login_with_tmp HTTP/1.1" 200 None
+2018-08-14 11:11:11,302 - root - INFO - 第四步：发送请求, 请求方法：POST
+2018-08-14 11:11:11,302 - root - INFO - 第五步：检查结果
+2018-08-14 11:11:11,302 - root - INFO - 测试通过
+2018-08-14 11:11:11,302 - root - INFO - login_short_pwd_zh - Result: Pass - msg: {'success': False, 'err': '用户名或密码错误'}
+2018-08-14 11:11:11,302 - root - INFO - ----------------------------------------login_short_pwd_zh END----------------------------------------
+
+2018-08-14 11:11:11,302 - root - INFO - ----------------------------------------login_bad_pwd_zh START----------------------------------------
+2018-08-14 11:11:11,303 - root - INFO - 第一步：设置url  api/login_with_tmp
+2018-08-14 11:11:11,303 - root - INFO - 第二步：设置发送数据  {'email': 'zjm901026@163.com', 'password': '1234567'}
+2018-08-14 11:11:11,303 - root - INFO - 第三步：设置头部  {'language': 'zh'}
+2018-08-14 11:11:11,305 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 11:11:11,383 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/login_with_tmp HTTP/1.1" 200 None
+2018-08-14 11:11:11,386 - root - INFO - 第四步：发送请求, 请求方法：POST
+2018-08-14 11:11:11,386 - root - INFO - 第五步：检查结果
+2018-08-14 11:11:11,386 - root - INFO - 测试通过
+2018-08-14 11:11:11,386 - root - INFO - login_bad_pwd_zh - Result: Pass - msg: {'success': False, 'err': '用户名或密码错误'}
+2018-08-14 11:11:11,386 - root - INFO - ----------------------------------------login_bad_pwd_zh END----------------------------------------
+
+2018-08-14 11:11:11,386 - root - INFO - ----------------------------------------login_en START----------------------------------------
+2018-08-14 11:11:11,387 - root - INFO - 第一步：设置url  api/login_with_tmp
+2018-08-14 11:11:11,387 - root - INFO - 第二步：设置发送数据  {'email': '547980561@qq.com', 'password': '123456'}
+2018-08-14 11:11:11,387 - root - INFO - 第三步：设置头部  {'language': 'en'}
+2018-08-14 11:11:11,389 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 11:11:11,506 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/login_with_tmp HTTP/1.1" 200 None
+2018-08-14 11:11:11,510 - root - INFO - 第四步：发送请求, 请求方法：POST
+2018-08-14 11:11:11,510 - root - INFO - 第五步：检查结果
+2018-08-14 11:11:11,510 - root - INFO - 测试通过
+2018-08-14 11:11:11,510 - root - INFO - login_en - Result: Pass - msg: {'success': True, 'user': {'guid': '919ad0d2-3ed0-4ecf-97d9-602254389574', 'token': 'nwPuyiNC5ESo6ytWSOKs9w', 'email': '547980561@qq.com', 'is_tmp': False}, 'need_choose_account': False}
+2018-08-14 11:11:11,510 - root - INFO - ----------------------------------------login_en END----------------------------------------
+
+2018-08-14 11:11:11,510 - root - INFO - ----------------------------------------login_email_null_en START----------------------------------------
+2018-08-14 11:11:11,511 - root - INFO - 第一步：设置url  api/login_with_tmp
+2018-08-14 11:11:11,511 - root - INFO - 第二步：设置发送数据  {'email': None, 'password': '123456'}
+2018-08-14 11:11:11,511 - root - INFO - 第三步：设置头部  {'language': 'en'}
+2018-08-14 11:11:11,512 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 11:11:11,589 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/login_with_tmp HTTP/1.1" 200 None
+2018-08-14 11:11:11,593 - root - INFO - 第四步：发送请求, 请求方法：POST
+2018-08-14 11:11:11,593 - root - INFO - 第五步：检查结果
+2018-08-14 11:11:11,593 - root - INFO - 测试通过
+2018-08-14 11:11:11,593 - root - INFO - login_email_null_en - Result: Pass - msg: {'success': False, 'err': 'Invalid email'}
+2018-08-14 11:11:11,593 - root - INFO - ----------------------------------------login_email_null_en END----------------------------------------
+
+2018-08-14 11:11:11,593 - root - INFO - ----------------------------------------login_pwd_null_en START----------------------------------------
+2018-08-14 11:11:11,594 - root - INFO - 第一步：设置url  api/login_with_tmp
+2018-08-14 11:11:11,594 - root - INFO - 第二步：设置发送数据  {'email': 'zjm901026@163.com', 'password': None}
+2018-08-14 11:11:11,594 - root - INFO - 第三步：设置头部  {'language': 'en'}
+2018-08-14 11:11:11,596 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 11:11:11,678 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/login_with_tmp HTTP/1.1" 200 None
+2018-08-14 11:11:11,681 - root - INFO - 第四步：发送请求, 请求方法：POST
+2018-08-14 11:11:11,681 - root - INFO - 第五步：检查结果
+2018-08-14 11:11:11,681 - root - INFO - 测试通过
+2018-08-14 11:11:11,681 - root - INFO - login_pwd_null_en - Result: Pass - msg: {'success': False, 'err': 'Wrong username or password'}
+2018-08-14 11:11:11,681 - root - INFO - ----------------------------------------login_pwd_null_en END----------------------------------------
+
+2018-08-14 11:11:11,681 - root - INFO - ----------------------------------------login_illegal_email_en START----------------------------------------
+2018-08-14 11:11:11,682 - root - INFO - 第一步：设置url  api/login_with_tmp
+2018-08-14 11:11:11,682 - root - INFO - 第二步：设置发送数据  {'email': 'zjm901026@163', 'password': '123456'}
+2018-08-14 11:11:11,682 - root - INFO - 第三步：设置头部  {'language': 'en'}
+2018-08-14 11:11:11,684 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): coinbox-sandbox.kechenggezi.com
+2018-08-14 11:11:11,749 - urllib3.connectionpool - DEBUG - https://coinbox-sandbox.kechenggezi.com:443 "POST /api/login_with_tmp HTTP/1.1" 200 None
+2018-08-14 11:11:11,751 - root - INFO - 第四步：发送请求, 请求方法：POST
+2018-08-14 11:11:11,751 - root - INFO - 第五步：检查结果
+2018-08-14 11:11:11,751 - root - INFO - 测试通过
+2018-08-14 11:11:11,751 - root - INFO - login_illegal_email_en - Result: Pass - msg: {'success': False, 'err': 'Email is not registered'}
+2018-08-14 11:11:11,752 - root - INFO - ----------------------------------------login_illegal_email_en END----------------------------------------
+
+2018-08-14 11:11:11,752 - root - INFO - *********TEST END*********
+2018-08-14 11:11:11,752 - root - INFO - Doesn't send report email to developer.
