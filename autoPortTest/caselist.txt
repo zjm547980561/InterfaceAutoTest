@@ -1,6 +1,7 @@
 # user/testRegister
 # user/testLogin
-user/testManualExchange
+# user/testManualExchange
+user/testAutoExchange
 # user/testIco
 # user/testWallet
 # user/testRegister

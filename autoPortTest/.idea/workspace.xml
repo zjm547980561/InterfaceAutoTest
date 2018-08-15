@@ -47,38 +47,29 @@
     <SUITE FILE_PATH="coverage/autoPortTest$readConfig.coverage" NAME="readConfig Coverage Results" MODIFIED="1532932284100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/autoPortTest$Log.coverage" NAME="Log Coverage Results" MODIFIED="1533624442835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/autoPortTest$runAll__1_.coverage" NAME="runAll (1) Coverage Results" MODIFIED="1534215797153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/interfaceTest 2" />
-    <SUITE FILE_PATH="coverage/autoPortTest$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1534241682963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/autoPortTest$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1534318709026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/autoPortTest$block.coverage" NAME="block Coverage Results" MODIFIED="1533709944128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../block" />
-    <SUITE FILE_PATH="coverage/autoPortTest$testLmdb.coverage" NAME="testLmdb Coverage Results" MODIFIED="1534241676798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../block" />
+    <SUITE FILE_PATH="coverage/autoPortTest$testLmdb.coverage" NAME="testLmdb Coverage Results" MODIFIED="1534316110712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../block" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="testManualExchange.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testCase/user/testManualExchange.py">
+      <file leaf-file-name="interfaceURL.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testFile/interfaceURL.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="270" column="38" lean-forward="true" selection-start-line="270" selection-start-column="38" selection-end-line="270" selection-end-column="38" />
+            <state relative-caret-position="231">
+              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testAutoExchange.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testCase/user/testAutoExchange.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="217" column="43" lean-forward="true" selection-start-line="217" selection-start-column="43" selection-end-line="217" selection-end-column="43" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="output.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result/20180814181443/output.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-43">
-              <caret line="3342" column="90" selection-start-line="3342" selection-start-column="80" selection-end-line="3342" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testLmdb.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../block/testLmdb.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -94,9 +85,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>REPORT_TEST_WITH_OUTPUT_TMPL</find>
-      <find>heading</find>
-      <find>HEADING_TMPL</find>
       <find>show</find>
       <find>showClassDetail</find>
       <find>Show</find>
@@ -122,8 +110,11 @@
       <find>transfer_to_name_empty_transfer</find>
       <find>input_price_type_empty_buy</find>
       <find>error</find>
-      <find>delete_trade_list</find>
       <find>delete_all</find>
+      <find>delete_trade_list</find>
+      <find>title</find>
+      <find>title_</find>
+      <find>encrypted_api_key_empty</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,7 +139,6 @@
         <option value="$PROJECT_DIR$/common/Log.py" />
         <option value="$PROJECT_DIR$/testCase/user/testLogin.py" />
         <option value="$PROJECT_DIR$/common/verify_code.py" />
-        <option value="$PROJECT_DIR$/testFile/interfaceURL.xml" />
         <option value="$PROJECT_DIR$/testCase/user/testIco.py" />
         <option value="$PROJECT_DIR$/testCase/user/testRegister.py" />
         <option value="$PROJECT_DIR$/testCase/user/testWallet.py" />
@@ -158,10 +148,12 @@
         <option value="$USER_HOME$/Downloads/interfaceTest 2/runAll.py" />
         <option value="/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/paramunittest.py" />
         <option value="$PROJECT_DIR$/runAll.py" />
-        <option value="$PROJECT_DIR$/caselist.txt" />
         <option value="$PROJECT_DIR$/config.ini" />
-        <option value="$PROJECT_DIR$/../block/testLmdb.py" />
         <option value="$PROJECT_DIR$/testCase/user/testManualExchange.py" />
+        <option value="$PROJECT_DIR$/testFile/interfaceURL.xml" />
+        <option value="$PROJECT_DIR$/../block/testLmdb.py" />
+        <option value="$PROJECT_DIR$/caselist.txt" />
+        <option value="$PROJECT_DIR$/testCase/user/testAutoExchange.py" />
       </list>
     </option>
   </component>
@@ -199,18 +191,12 @@
               <item name="autoPortTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="autoPortTest" type="462c0819:PsiDirectoryNode" />
               <item name="result" type="462c0819:PsiDirectoryNode" />
-              <item name="20180814181443" type="462c0819:PsiDirectoryNode" />
+              <item name="20180815153344" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autoPortTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="autoPortTest" type="462c0819:PsiDirectoryNode" />
               <item name="testCase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autoPortTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autoPortTest" type="462c0819:PsiDirectoryNode" />
-              <item name="testCase" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autoPortTest" type="b2602c69:ProjectViewProjectNode" />
@@ -406,26 +392,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/result/20180813183918/output.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCase/user/testIco.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="77" column="15" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/post_data.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/result/20180813190143/output.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -560,13 +526,6 @@
     <entry file="file://$PROJECT_DIR$/result/20180814111110/output.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/caselist.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result/20180814122118/output.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -675,20 +634,6 @@
         <state relative-caret-position="-10768" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testFile/interfaceURL.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result/20180814165643/output.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -710,8 +655,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../block/testLmdb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        <state relative-caret-position="480">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -724,8 +669,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testCase/user/testManualExchange.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="270" column="38" lean-forward="true" selection-start-line="270" selection-start-column="38" selection-end-line="270" selection-end-column="38" />
+        <state relative-caret-position="-1245">
+          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testFile/interfaceURL.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180815151106/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="327" column="103" selection-start-line="327" selection-start-column="80" selection-end-line="327" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caselist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/20180815152737/output.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="57" lean-forward="true" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/user/testAutoExchange.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="217" column="43" lean-forward="true" selection-start-line="217" selection-start-column="43" selection-end-line="217" selection-end-column="43" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

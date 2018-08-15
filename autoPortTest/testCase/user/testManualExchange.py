@@ -284,7 +284,6 @@ class ManualExchange(unittest.TestCase):
         self.url = common.get_url_from_xml('global_coins') + '/' + self.global_coin_guid + '/holdings'
         configHttp.set_url(self.url)
         configHttp.set_headers(self.headers)
-        configHttp.set_data({})
         self.logger.info("url: " + self.url)
         self.logger.info("headers: " + str(self.headers))
         configHttp.set_data({})

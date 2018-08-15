@@ -35,10 +35,9 @@
         <module>global_coins</module>
     </url>
 
-    <url name="accountSetting">
-        <group>User</group>
-        <module>Member</module>
-        <action>accountSetting</action>
+    <url name="auto_exchange">
+        <group>api</group>
+        <module>balances</module>
     </url>
 
     <url name="updatePassword">
