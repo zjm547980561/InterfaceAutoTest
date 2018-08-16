@@ -1,19 +1,6 @@
 # user/testRegister
-# user/testLogin
-# user/testManualExchange
+user/testLogin
+user/testManualExchange
 user/testAutoExchange
-# user/testIco
-# user/testWallet
-# user/testRegister
-# user/testRegisterQuick
-# user/testGenerate
-# user/testLoginFB
-# user/testLogout
-# user/testAccountSetting
-# user/testUpdatePassword
-# user/testUploadImg
-# user/testGetAddressList
-# user/testGetAddress
-# product/testGetProductInfo
-# user/testAddAddress
-# user/testDeleteAddress
+user/testIco
+user/testWallet

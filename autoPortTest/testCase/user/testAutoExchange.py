@@ -4,7 +4,6 @@ import readConfig as readConfig
 from common import Log as Log
 from common import common
 from common import configHttp as ConfigHttp
-from requests.exceptions import ReadTimeout
 from requests.exceptions import HTTPError
 
 
@@ -17,6 +16,7 @@ Log.MyLog.get_log().logger.info(case)
 localReadConfig = readConfig.ReadConfig()
 configHttp = ConfigHttp.ConfigHttp()
 d = {}
+auto_exchange_guid = []
 
 
 @paramunittest.parametrized(*login_xls)
@@ -150,13 +150,13 @@ class AutoExchange(unittest.TestCase):
             if self.method == "post":
                 self.return_json = configHttp.post()
             elif self.method == "delete":
-                self.result = self.get_trade_list()
-                self.delete_trade_list()
+                self.logger.info("准备删除自动交易记录")
+                self.delete_list()
             else:
                 pass
-        except ReadTimeout as e:
+        except Exception as e:
             self.logger.error(e)
-            raise ReadTimeout
+            raise Exception("请求失败")
         self.logger.info("url  " + self.url)
         self.logger.info("第四步：发送请求, 请求方法：" + self.method)
 
@@ -169,12 +169,16 @@ class AutoExchange(unittest.TestCase):
         """
         :return:
         """
-        if self.info:
-            if self.info['success']:
-                guid = self.info['balance']['guid']
-                localReadConfig.set_headers('auto_exchange_guid', guid)
-            else:
-                pass
+        if not self.method == "delete":
+            if self.info:
+                if self.info['success']:
+                    guid = self.info['balance']['guid']
+                    localReadConfig.set_headers('auto_exchange_guid', guid)
+                    auto_exchange_guid.append(guid)
+                else:
+                    pass
+        else:
+            pass
         self.log.build_case_line(self.case_name, self.success, self.info)
         print("测试结束，输出log完结\n\n")
         self.log.build_end_line(self.case_name)
@@ -195,9 +199,8 @@ class AutoExchange(unittest.TestCase):
                     self.assertEqual(self.wallet_address, self.info['balance']['wallet_address'])
                     self.assertEqual(self.wallet_type, self.info['balance']['wallet_type'])
                 elif self.method == "delete":
-                    self.return_json = configHttp.get()
-                    self.info = self.return_json.json()
-                    self.assertEqual(self.info['err'], self.msg)
+                    self.assertEqual(self.return_json.status_code, 200)
+                    self.assertTrue(self.info['success'])
                     self.success = "pass"
                 else:
                     if not self.info['success']:
@@ -225,3 +228,12 @@ class AutoExchange(unittest.TestCase):
         else:
             self.assertIn(self.data['exchange_guid'], self.info['balance']['title'].lower())
         self.assertEqual(self.data['exchange_guid'], self.info['balance']['exchange_guid'])
+
+    def delete_list(self):
+        for item in auto_exchange_guid:
+            self.url = common.get_url_from_xml('auto_exchange') + '/' + item
+            configHttp.set_url(self.url)
+            self.logger.info('url: ' + self.url)
+            self.logger.info('headers: ' + str(self.headers))
+            self.return_json = configHttp.delete()
+            self.logger.info("删除记录：" + item)
