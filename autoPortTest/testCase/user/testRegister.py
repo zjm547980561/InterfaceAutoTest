@@ -8,10 +8,9 @@ from common.verify_code import Web
 
 
 login_xls = common.get_xls("userCase.xlsx", "register")
-print(login_xls)
+# print(login_xls)
 case = {}
 
-Log.MyLog.get_log().logger.info(case)
 
 localReadConfig = readConfig.ReadConfig()
 configHttp = ConfigHttp.ConfigHttp()

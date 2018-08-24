@@ -8,7 +8,7 @@ import pdb
 
 
 login_xls = common.get_xls("userCase.xlsx", "login")
-print(login_xls)
+# print(login_xls)
 case = {}
 for item in login_xls:
     case[item[0]] = item[5]

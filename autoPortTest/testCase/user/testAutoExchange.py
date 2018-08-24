@@ -8,10 +8,9 @@ from requests.exceptions import HTTPError
 
 
 login_xls = common.get_xls("userCase.xlsx", "auto_exchange")
-print(login_xls)
+# print(login_xls)
 case = {}
 
-Log.MyLog.get_log().logger.info(case)
 
 localReadConfig = readConfig.ReadConfig()
 configHttp = ConfigHttp.ConfigHttp()
@@ -22,7 +21,7 @@ auto_exchange_guid = []
 @paramunittest.parametrized(*login_xls)
 class AutoExchange(unittest.TestCase):
     def setParameters(self, case_name, method, balance_type, encrypted_api_key, encrypted_api_secret, exchange_guid,
-                      require_api_key,require_api_secret, require_third_key, support_qr, third_key_name, title, cost,
+                      require_api_key, require_api_secret, require_third_key, support_qr, third_key_name, title, cost,
                       language, msg):
         """
         set params
